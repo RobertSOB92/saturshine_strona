@@ -27,7 +27,7 @@ const SERVICES = [
     number: '01',
     title: 'Sprzątanie biur',
     tags: ['Cykliczne', 'Jednorazowe', 'B2B'],
-    lead: 'Utrzymanie czystości, które nie wymaga myślenia z Twojej strony.',
+    lead: 'Utrzymanie czystości, które nie wymaga zaangażowania z Twojej strony.',
     forWho: 'Biura, przestrzenie coworkingowe, siedziby firm, recepcje i ciągi komunikacyjne.',
     includes: [
       'Odkurzanie i mycie podłóg',
