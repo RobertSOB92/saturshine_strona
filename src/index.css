@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pine: #1B3A2D;
+  --color-pine-mid: #2d5c45;
+  --color-pine-light: #e8f0eb;
+  --color-pine-xlight: #f2f7f4;
+  --color-amber: #B8832A;
+  --color-amber-hover: #c99030;
+  --color-amber-pale: #fdf4e3;
+  --color-ink: #141414;
+  --color-ink-mid: #3a3a3a;
+  --color-ink-soft: #717171;
+  --color-ink-faint: #b0b0b0;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F6F6F4;
+  --color-surface-3: #EEECEA;
+  --color-border: #E2E0DC;
+  --color-border-strong: #C8C4BE;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; }
+p { margin: 0; }
+
+::selection {
+  background: var(--color-pine);
+  color: #fff;
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
