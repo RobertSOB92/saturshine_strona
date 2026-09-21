@@ -7,8 +7,8 @@ export const SITE_CONFIG = {
   // Dane kontaktowe
   companyName: 'SaturShine',
   email: 'kontakt@saturshine.pl',
-  phone: '+48 500 000 000',
-  phoneClean: '48500000000', // bez spacji i plusów, do linków tel:
+  phone: '+48 511 727 196',
+  phoneClean: '48511727196', // bez spacji i plusów, do linków tel:
 
   // Lokalizacja
   serviceArea: 'Warszawa i okolice',
