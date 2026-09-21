@@ -76,69 +76,48 @@ export default function Process() {
           </div>
         </div>
 
-        {/* Steps — NOT 4 equal columns. Large step, then vertical list structure */}
+        {/* Steps */}
         <div className="process-content" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: '#E2E0DC' }}>
-          {/* Steps 01 & 02 — top row, different sizes */}
-          <div className="fade-up" style={{ background: '#F6F6F4', padding: '2.5rem 2.5rem 2.5rem 0' }}>
-            {/* Big featured step */}
-            <div style={{ marginBottom: '3rem', paddingBottom: '3rem', borderBottom: '1px solid #E2E0DC' }}>
-              <span style={{
-                fontFamily: 'Syne, sans-serif', fontWeight: 800,
-                fontSize: 96, color: '#EEECEA', lineHeight: 1,
-                display: 'block', marginBottom: -16,
-                letterSpacing: '-0.04em',
-              }} aria-hidden="true">01</span>
-              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 24, color: '#141414', margin: '0 0 10px' }}>
-                {STEPS[0].title}
-              </h3>
-              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 16px' }}>
-                {STEPS[0].body}
-              </p>
-              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#B8832A', letterSpacing: '0.1em' }}>
-                → {STEPS[0].meta}
-              </span>
-            </div>
-
-            {/* Step 02 — compact */}
-            <div>
-              <span style={{
-                fontFamily: 'Syne, sans-serif', fontWeight: 800,
-                fontSize: 56, color: '#EEECEA', lineHeight: 1,
-                display: 'block', marginBottom: -8,
-                letterSpacing: '-0.03em',
-              }} aria-hidden="true">02</span>
-              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: '0 0 8px' }}>
-                {STEPS[1].title}
-              </h3>
-              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px' }}>
-                {STEPS[1].body}
-              </p>
-              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#B8832A', letterSpacing: '0.1em' }}>
-                → {STEPS[1].meta}
-              </span>
-            </div>
+          {/* Steps 01 & 02 — Left Column */}
+          <div className="fade-up" style={{ background: '#F6F6F4', padding: '2.5rem 2.5rem 2.5rem 0', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+            {[STEPS[0], STEPS[1]].map((step, i) => (
+              <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>
+                <span style={{
+                  fontFamily: 'Syne, sans-serif', fontWeight: 800,
+                  fontSize: 56, color: '#EEECEA', lineHeight: 1,
+                  display: 'block', marginBottom: -8,
+                  letterSpacing: '-0.03em',
+                }} aria-hidden="true">{step.number}</span>
+                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: '0 0 8px' }}>
+                  {step.title}
+                </h3>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px' }}>
+                  {step.body}
+                </p>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#B8832A', letterSpacing: '0.1em' }}>
+                  → {step.meta}
+                </span>
+              </div>
+            ))}
           </div>
 
-          {/* Steps 03 & 04 — right column */}
+          {/* Steps 03 & 04 — Right Column */}
           <div className="fade-up delay-2" style={{ background: '#fff', padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             {[STEPS[2], STEPS[3]].map((step, i) => (
               <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, marginBottom: 12 }}>
-                  <span style={{
-                    width: 36, height: 36, borderRadius: '50%',
-                    border: '1.5px solid #1B3A2D',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 12, color: '#1B3A2D',
-                    flexShrink: 0,
-                  }}>{step.number}</span>
-                  <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: 0, paddingTop: 7 }}>
-                    {step.title}
-                  </h3>
-                </div>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px', paddingLeft: 52 }}>
+                <span style={{
+                  fontFamily: 'Syne, sans-serif', fontWeight: 800,
+                  fontSize: 56, color: '#EEECEA', lineHeight: 1,
+                  display: 'block', marginBottom: -8,
+                  letterSpacing: '-0.03em',
+                }} aria-hidden="true">{step.number}</span>
+                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: '0 0 8px' }}>
+                  {step.title}
+                </h3>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px' }}>
                   {step.body}
                 </p>
-                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#B8832A', letterSpacing: '0.1em', paddingLeft: 52, display: 'block' }}>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#B8832A', letterSpacing: '0.1em' }}>
                   → {step.meta}
                 </span>
               </div>
