@@ -38,7 +38,7 @@ export default function ContactInfo() {
               letterSpacing: '-0.025em', color: '#141414',
               lineHeight: 1.1, margin: '0 0 20px',
             }}>
-              Napisz lub zadzwoń —<br />
+              Napisz lub zadzwoń<br />
             </h2>
             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7, maxWidth: 340 }}>
               Nie masz czasu na formularz? Możesz po prostu zadzwonić lub napisać.
