@@ -149,6 +149,10 @@ export default function Process() {
           #wspolpraca .process-content {
             grid-template-columns: 1fr !important;
           }
+          #wspolpraca .process-content {
+            padding: 1.5rem !important;
+            gap: 2.5rem !important;
+          }
         }
       `}</style>
     </section>
