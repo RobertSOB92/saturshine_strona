@@ -38,10 +38,10 @@ export default function ContactInfo() {
               letterSpacing: '-0.025em', color: '#141414',
               lineHeight: 1.1, margin: '0 0 20px',
             }}>
-              Napisz lub zadzwoń —<br />odpiszemy szybko
+              Napisz lub zadzwoń —<br />
             </h2>
             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7, maxWidth: 340 }}>
-              Nie masz czasu na formularz? Możesz po prostu zadzwonić lub napisać. Reagujemy sprawnie.
+              Nie masz czasu na formularz? Możesz po prostu zadzwonić lub napisać.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function ContactInfo() {
                 <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414' }}>{SITE_CONFIG.phone}</span>
               </div>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
-                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
 
@@ -89,7 +89,7 @@ export default function ContactInfo() {
                 <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414' }}>{SITE_CONFIG.email}</span>
               </div>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
-                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
 
