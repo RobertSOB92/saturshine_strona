@@ -56,7 +56,7 @@ export default function Process() {
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2.5rem' }}>
 
         {/* Header */}
-        <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '4rem' }}>
+        <div className="fade-up process-header" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '4rem' }}>
           <h2
             id="process-heading"
             style={{
@@ -77,7 +77,7 @@ export default function Process() {
         </div>
 
         {/* Steps — NOT 4 equal columns. Large step, then vertical list structure */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: '#E2E0DC' }}>
+        <div className="process-content" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: '#E2E0DC' }}>
           {/* Steps 01 & 02 — top row, different sizes */}
           <div className="fade-up" style={{ background: '#F6F6F4', padding: '2.5rem 2.5rem 2.5rem 0' }}>
             {/* Big featured step */}
@@ -166,7 +166,8 @@ export default function Process() {
 
       <style>{`
         @media (max-width: 768px) {
-          #wspolpraca [style*="gridTemplateColumns: 1fr 1fr"] {
+          #wspolpraca .process-header,
+          #wspolpraca .process-content {
             grid-template-columns: 1fr !important;
           }
         }

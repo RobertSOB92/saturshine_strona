@@ -146,6 +146,7 @@ export default function Services() {
         >
           {/* Each row has a different internal layout */}
           <div
+            className="service-row"
             style={{
               display: 'grid',
               // Alternating: even rows have accent block on right, odd on left
@@ -155,7 +156,7 @@ export default function Services() {
             }}
           >
             {/* Number column */}
-            <div style={{
+            <div className="service-num" style={{
               display: 'flex', alignItems: 'flex-start', paddingTop: 32,
               borderRight: '1px solid #E2E0DC',
             }}>
@@ -169,7 +170,7 @@ export default function Services() {
             </div>
 
             {/* Main content */}
-            <div style={{ padding: '2rem 2.5rem 2rem 2rem', borderRight: '1px solid #E2E0DC' }}>
+            <div className="service-main" style={{ padding: '2rem 2.5rem 2rem 2rem', borderRight: '1px solid #E2E0DC' }}>
               {/* Tags */}
               <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
                 {service.tags.map(tag => (
@@ -201,7 +202,7 @@ export default function Services() {
             </div>
 
             {/* Right: scope + note */}
-            <div style={{ padding: '2rem 0 2rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div className="service-right" style={{ padding: '2rem 0 2rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 10 }}>
                   Co obejmuje
@@ -251,16 +252,19 @@ export default function Services() {
 
       <style>{`
         @media (max-width: 900px) {
-          #uslugi article > div {
+          #uslugi .service-row {
             grid-template-columns: 1fr !important;
           }
-          #uslugi article > div > div:first-child {
+          #uslugi .service-num {
             display: none !important;
           }
-          #uslugi article > div > div:nth-child(3) {
-            border-left: none !important;
-            padding-left: 0 !important;
-            padding-top: 0 !important;
+          #uslugi .service-main {
+            border-right: none !important;
+            padding: 2rem 0 1rem 0 !important;
+            border-bottom: 1px solid #E2E0DC !important;
+          }
+          #uslugi .service-right {
+            padding: 1rem 0 2rem 0 !important;
           }
         }
       `}</style>

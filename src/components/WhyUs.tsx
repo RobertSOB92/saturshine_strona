@@ -60,7 +60,7 @@ export default function WhyUs() {
             marginBottom: '4rem',
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '3rem' }}>
+        <div className="whyus-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '3rem' }}>
             <div style={{ flex: '0 0 auto' }}>
               <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#717171' }}>
                 Dlaczego SaturShine
@@ -85,7 +85,7 @@ export default function WhyUs() {
 
         {/* Reasons — NOT 2x2 identical cards.
             Layout: left full-height text block + right vertical list */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2px 1fr', gap: '3rem', alignItems: 'start' }}>
+        <div className="whyus-content" style={{ display: 'grid', gridTemplateColumns: '1fr 2px 1fr', gap: '3rem', alignItems: 'start' }}>
 
           {/* Left: first 2 reasons stacked vertically with large typography */}
           <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
@@ -136,7 +136,11 @@ export default function WhyUs() {
 
       <style>{`
         @media (max-width: 900px) {
-          #dlaczego [style*="gridTemplateColumns: 1fr 2px 1fr"] {
+          #dlaczego .whyus-header {
+            flex-direction: column !important;
+            gap: 1.5rem !important;
+          }
+          #dlaczego .whyus-content {
             grid-template-columns: 1fr !important;
           }
           #dlaczego [style*="background: #E2E0DC; alignSelf"] {

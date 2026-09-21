@@ -68,7 +68,7 @@ export default function Hero() {
         }}
       >
         {/* Two-column layout: big H1 left, details right */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 12rem)', rowGap: '3rem', alignItems: 'flex-end' }}>
+        <div className="hero-content" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 12rem)', rowGap: '3rem', alignItems: 'flex-end' }}>
           {/* H1 */}
           <div>
             <h1
@@ -138,6 +138,7 @@ export default function Hero() {
 
           {/* Right: service index list */}
           <div
+            className="hero-sidebar"
             style={{
               display: 'flex', flexDirection: 'column', gap: 0,
               borderLeft: '1px solid #E2E0DC',
@@ -178,10 +179,11 @@ export default function Hero() {
 
       <style>{`
         @media (max-width: 768px) {
-          #hero [style*="gridTemplateColumns"] {
-            grid-template-columns: 1fr !important;
+          #hero .hero-content {
+            flex-direction: column !important;
+            align-items: flex-start !important;
           }
-          #hero [style*="minWidth: 220"] {
+          #hero .hero-sidebar {
             display: none !important;
           }
         }
