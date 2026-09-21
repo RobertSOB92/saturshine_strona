@@ -32,6 +32,7 @@ export default function Hero() {
 
       {/* Top label strip */}
       <div
+        className="section-container"
         style={{
           position: 'absolute',
           top: 80,
@@ -40,10 +41,6 @@ export default function Hero() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '0 2.5rem',
-          maxWidth: 1200,
-          margin: '0 auto',
-          width: '100%',
           zIndex: 1,
         }}
       >
@@ -61,21 +58,18 @@ export default function Hero() {
         style={{
           position: 'relative',
           zIndex: 1,
-          maxWidth: 1200,
-          margin: '0 auto',
-          width: '100%',
-          padding: '0 2.5rem 5rem',
+          paddingBottom: '5rem',
         }}
       >
         {/* Two-column layout: big H1 left, details right */}
-        <div className="hero-content" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 12rem)', rowGap: '3rem', alignItems: 'flex-end' }}>
+        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 12rem)', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
           {/* H1 */}
           <div>
             <h1
               style={{
                 fontFamily: 'Syne, sans-serif',
                 fontWeight: 800,
-                fontSize: 'clamp(28px, 5vw, 76px)',
+                fontSize: 'clamp(24px, 5vw, 76px)',
                 lineHeight: 1.02,
                 letterSpacing: '-0.03em',
                 color: '#141414',

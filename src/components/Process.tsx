@@ -53,7 +53,7 @@ export default function Process() {
       aria-labelledby="process-heading"
       style={{ background: '#F6F6F4', padding: '6rem 0' }}
     >
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2.5rem' }}>
+      <div className="section-container">
 
         {/* Header */}
         <div className="fade-up process-header" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '4rem' }}>
@@ -61,7 +61,7 @@ export default function Process() {
             id="process-heading"
             style={{
               fontFamily: 'Syne, sans-serif', fontWeight: 800,
-              fontSize: 'clamp(36px, 5vw, 64px)',
+              fontSize: 'clamp(32px, 5vw, 64px)',
               letterSpacing: '-0.03em', color: '#141414',
               lineHeight: 1.05, margin: 0,
             }}
