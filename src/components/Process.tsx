@@ -77,9 +77,9 @@ export default function Process() {
         </div>
 
         {/* Steps */}
-        <div className="process-content" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: '#E2E0DC' }}>
+        <div className="process-content fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', background: '#fff', padding: '3rem' }}>
           {/* Steps 01 & 02 — Left Column */}
-          <div className="fade-up" style={{ background: '#F6F6F4', padding: '2.5rem 2.5rem 2.5rem 0', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             {[STEPS[0], STEPS[1]].map((step, i) => (
               <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>
                 <span style={{
@@ -102,7 +102,7 @@ export default function Process() {
           </div>
 
           {/* Steps 03 & 04 — Right Column */}
-          <div className="fade-up delay-2" style={{ background: '#fff', padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             {[STEPS[2], STEPS[3]].map((step, i) => (
               <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>
                 <span style={{
