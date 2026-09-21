@@ -193,7 +193,7 @@ export default function ContactForm() {
             <form onSubmit={onSubmit} noValidate aria-label="Formularz zapytania o wycenę">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem 2rem' }}>
                 {/* Company - full width */}
-                <div style={{ gridColumn: '1 / -1' }}>
+                <div className="full-width-field" style={{ gridColumn: '1 / -1' }}>
                   <label htmlFor="form-company" style={labelStyle}>Nazwa firmy / obiektu <span style={{ color: '#B8832A' }}>*</span></label>
                   <input id="form-company" name="company" type="text" autoComplete="organization"
                     placeholder="np. Biuro Przykład Sp. z o.o."
@@ -255,7 +255,7 @@ export default function ContactForm() {
                 </div>
 
                 {/* Area - full width */}
-                <div style={{ gridColumn: '1 / -1' }}>
+                <div className="full-width-field" style={{ gridColumn: '1 / -1' }}>
                   <label htmlFor="form-area" style={labelStyle}>Metraż / opis obiektu <span style={{ color: '#B8832A' }}>*</span></label>
                   <input id="form-area" name="area" type="text"
                     placeholder="np. 400 m² biura w centrum Warszawy, 3 piętra"
@@ -267,7 +267,7 @@ export default function ContactForm() {
                 </div>
 
                 {/* Message - full width */}
-                <div style={{ gridColumn: '1 / -1' }}>
+                <div className="full-width-field" style={{ gridColumn: '1 / -1' }}>
                   <label htmlFor="form-message" style={labelStyle}>Wiadomość dodatkowa</label>
                   <textarea id="form-message" name="message" rows={3}
                     placeholder="Dodatkowe informacje, preferencje co do terminu…"
@@ -310,7 +310,7 @@ export default function ContactForm() {
       <style>{`
         @media (max-width: 700px) {
           #wycena form > div { grid-template-columns: 1fr !important; }
-          #wycena form > div > div[style*="1 / -1"] { grid-column: 1 !important; }
+          #wycena form .full-width-field { grid-column: 1 !important; }
         }
       `}</style>
     </section>

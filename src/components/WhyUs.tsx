@@ -109,7 +109,7 @@ export default function WhyUs() {
           </div>
 
           {/* Center divider */}
-          <div style={{ background: '#E2E0DC', alignSelf: 'stretch' }} aria-hidden="true" />
+          <div className="whyus-divider" style={{ background: '#E2E0DC', alignSelf: 'stretch' }} aria-hidden="true" />
 
           {/* Right: last 2 reasons + large number decoration */}
           <div className="fade-up delay-2" style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
@@ -143,7 +143,7 @@ export default function WhyUs() {
           #dlaczego .whyus-content {
             grid-template-columns: 1fr !important;
           }
-          #dlaczego [style*="background: #E2E0DC; alignSelf"] {
+          #dlaczego .whyus-divider {
             display: none !important;
           }
         }

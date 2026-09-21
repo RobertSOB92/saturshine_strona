@@ -28,7 +28,7 @@ export default function ContactInfo() {
       style={{ background: '#fff', padding: '5rem 0', borderTop: '1px solid #E2E0DC' }}
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2.5rem' }}>
-        <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+        <div className="fade-up contact-info-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
           {/* Left */}
           <div>
             <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#717171', display: 'block', marginBottom: 10 }}>Kontakt</span>
@@ -105,7 +105,7 @@ export default function ContactInfo() {
 
       <style>{`
         @media (max-width: 768px) {
-          #kontakt [style*="gridTemplateColumns: 1fr 1fr"] {
+          #kontakt .contact-info-grid {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
           }

@@ -16,7 +16,7 @@ export default function Footer() {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '4rem 2.5rem 2rem' }}>
         {/* Top row */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '2rem', paddingBottom: '3rem', borderBottom: '1px solid #2a2a2a' }}>
+        <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '2rem', paddingBottom: '3rem', borderBottom: '1px solid #2a2a2a' }}>
           {/* Brand */}
           <div>
             <a href="#" style={{ display: 'block', textDecoration: 'none', marginBottom: 12 }} aria-label={`${COMPANY_NAME} — strona główna`}>
@@ -95,12 +95,12 @@ export default function Footer() {
 
       <style>{`
         @media (max-width: 768px) {
-          footer [style*="gridTemplateColumns: 1fr 1fr 1fr 1fr"] {
+          footer .footer-grid {
             grid-template-columns: 1fr 1fr !important;
           }
         }
         @media (max-width: 480px) {
-          footer [style*="gridTemplateColumns: 1fr 1fr 1fr 1fr"] {
+          footer .footer-grid {
             grid-template-columns: 1fr !important;
           }
         }
