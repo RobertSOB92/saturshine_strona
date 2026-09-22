@@ -74,6 +74,7 @@ export default function Hero() {
                 letterSpacing: '-0.03em',
                 color: '#172136',
                 margin: 0,
+                minHeight: '2.05em', // Pre-allocate space for 2 lines to prevent CLS
               }}
             >
               Czyste biuro.<br />
@@ -84,7 +85,7 @@ export default function Hero() {
             <div style={{ marginTop: '2.5rem', display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
               <div style={{ width: 1, height: 48, background: '#C8C4BE', flexShrink: 0, marginTop: 4 }} aria-hidden="true" />
               <div>
-                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#717171', lineHeight: 1.6, maxWidth: 440, margin: '0 0 1.5rem' }}>
+                <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#717171', lineHeight: 1.6, maxWidth: 440, margin: '0 0 1.5rem', minHeight: '4.8em' }}>
                   Sprzątanie biur, mycie przeszkleń, pranie wykładzin,
                   polimerowanie podłóg. Wycena po bezpłatnych oględzinach —
                   bo każdy obiekt jest inny.
