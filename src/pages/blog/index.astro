@@ -11,36 +11,78 @@ posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 <Layout title="Blog | SaturShine" description="Baza wiedzy o sprzątaniu biur i obiektów komercyjnych.">
   <Header client:load />
 
-  <main style={{ minHeight: '80vh', paddingTop: '120px', paddingBottom: '80px', maxWidth: 800, margin: '0 auto', paddingLeft: 20, paddingRight: 20 }}>
-    <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(32px, 5vw, 48px)', color: '#172136', marginBottom: 40 }}>
-      Blog & Porady
-    </h1>
-
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
-      {posts.map(post => (
-        <article style={{ borderBottom: '1px solid #E2E0DC', paddingBottom: 40 }}>
-          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', marginBottom: 8 }}>
-            {post.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
-          <h2 style={{ fontFamily: 'Syne, sans-serif', fontSize: 28, margin: '0 0 16px' }}>
-            <a href={`/blog/${post.id}`} style={{ color: '#172136', textDecoration: 'none' }}>
-              {post.data.title}
-            </a>
-          </h2>
-          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#444', lineHeight: 1.6, marginBottom: 20 }}>
-            {post.data.description}
-          </p>
-          <a href={`/blog/${post.id}`} style={{ fontFamily: 'Syne, sans-serif', fontWeight: 600, color: '#1B3A2D', textDecoration: 'none' }}>
-            Czytaj dalej →
-          </a>
-        </article>
-      ))}
-      
-      {posts.length === 0 && (
-        <p style={{ fontFamily: 'DM Sans, sans-serif', color: '#717171' }}>Wkrótce pojawią się tu pierwsze artykuły!</p>
-      )}
+  <main style={{ minHeight: '80vh', backgroundColor: '#F6F6F4', paddingBottom: '0' }}>
+    <div style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '5%', paddingRight: '5%', backgroundColor: '#F6F6F4' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(56px, 8vw, 100px)', color: '#141414', margin: '0 0 24px', letterSpacing: '-0.02em', fontWeight: 800 }}>
+          Porady & <span style={{ color: '#B8832A' }}>Wiedza</span>
+        </h1>
+        <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 'clamp(20px, 2vw, 24px)', color: '#1B3A2D', margin: 0, maxWidth: 600 }}>
+          Wszystko, co musisz wiedzieć o utrzymaniu perfekcyjnej czystości w swoim biurze.
+        </p>
+      </div>
+    </div>
+    
+    <div style={{ backgroundColor: '#fff', paddingTop: '40px', paddingBottom: '120px' }}>
+      <div className="blog-list-grid" style={{ maxWidth: 1200, margin: '0 auto', paddingLeft: '5%', paddingRight: '5%' }}>
+        {posts.map((post, index) => (
+          <article className="blog-list-item" style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(12, 1fr)', 
+            gap: '40px', 
+            paddingTop: '60px', 
+            paddingBottom: '60px', 
+            borderBottom: index === posts.length - 1 ? 'none' : '1px solid #141414' 
+          }}>
+            <div style={{ gridColumn: '1 / span 3' }}>
+              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#1B3A2D', margin: 0, fontWeight: 700, letterSpacing: '0.1em' }}>
+                {post.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+            </div>
+            <div style={{ gridColumn: '4 / span 9' }}>
+              <h2 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(32px, 4vw, 48px)', margin: '0 0 24px', lineHeight: 1.1, letterSpacing: '-0.01em', fontWeight: 800 }}>
+                <a href={`/blog/${post.id}`} className="blog-title-link" style={{ color: '#141414', textDecoration: 'none', transition: 'color 0.3s' }}>
+                  {post.data.title}
+                </a>
+              </h2>
+              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 18, color: '#444', lineHeight: 1.6, margin: '0 0 32px', maxWidth: 600 }}>
+                {post.data.description}
+              </p>
+              <a href={`/blog/${post.id}`} className="read-more-link" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, fontWeight: 700, color: '#1B3A2D', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                Czytaj artykuł 
+                <span className="arrow">→</span>
+              </a>
+            </div>
+          </article>
+        ))}
+        
+        {posts.length === 0 && (
+          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 24, color: '#717171', marginTop: 80 }}>Wkrótce pojawią się tu pierwsze artykuły!</p>
+        )}
+      </div>
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style is:global>
+  .blog-title-link:hover {
+    color: #B8832A !important;
+  }
+  .read-more-link .arrow {
+    transition: transform 0.3s ease;
+  }
+  .read-more-link:hover .arrow {
+    transform: translateX(4px);
+  }
+  @media (max-width: 900px) {
+    .blog-list-item {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 16px !important;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+</style>

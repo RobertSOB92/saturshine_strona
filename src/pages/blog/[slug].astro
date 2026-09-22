@@ -19,28 +19,55 @@ const { Content } = await render(entry);
 <Layout title={`${entry.data.title} | SaturShine`} description={entry.data.description}>
   <Header client:load />
 
-  <main style={{ minHeight: '80vh', paddingTop: '120px', paddingBottom: '80px', maxWidth: 720, margin: '0 auto', paddingLeft: 20, paddingRight: 20 }}>
+  <main style={{ minHeight: '80vh', backgroundColor: '#fff', paddingBottom: '0' }}>
     
-    <header style={{ marginBottom: 40 }}>
-      <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-        {entry.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })} • {entry.data.author}
-      </p>
-      <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', color: '#172136', lineHeight: 1.1, margin: '0 0 24px' }}>
-        {entry.data.title}
-      </h1>
-      <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 20, color: '#444', lineHeight: 1.6 }}>
-        {entry.data.description}
-      </p>
-    </header>
-
-    <article class="prose prose-lg max-w-none" style={{ fontFamily: 'DM Sans, sans-serif', color: '#172136', lineHeight: 1.8 }}>
-      <Content />
-    </article>
-
-    <div style={{ marginTop: 60, paddingTop: 40, borderTop: '1px solid #E2E0DC', textAlign: 'center' }}>
-      <a href="/blog" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 600, color: '#1B3A2D', textDecoration: 'none' }}>
-        ← Wróć do listy artykułów
-      </a>
+    <div style={{ paddingTop: '160px', paddingBottom: '80px', paddingLeft: '5%', paddingRight: '5%', backgroundColor: '#F6F6F4' }}>
+      <div className="editorial-grid" style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '40px' }}>
+        <div style={{ gridColumn: '1 / -1', marginBottom: 16 }}>
+          <a href="/blog" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, textTransform: 'uppercase', letterSpacing: '0.15em', color: '#B8832A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, fontWeight: 700 }}>
+            ← Powrót do artykułów
+          </a>
+        </div>
+        
+        <div style={{ gridColumn: '1 / span 9' }}>
+          <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(40px, 6vw, 80px)', color: '#141414', lineHeight: 1.05, margin: '0', letterSpacing: '-0.02em', fontWeight: 800 }}>
+            {entry.data.title}
+          </h1>
+        </div>
+        
+        <div style={{ gridColumn: '10 / span 3', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingBottom: 12 }}>
+          <div style={{ borderTop: '2px solid #1B3A2D', paddingTop: 16, marginBottom: 24 }}>
+             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#1B3A2D', margin: '0 0 6px', fontWeight: 700, letterSpacing: '0.1em' }}>DATA PUBLIKACJI</p>
+             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#444', margin: 0 }}>
+               {entry.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
+             </p>
+          </div>
+          <div style={{ borderTop: '1px solid #dcdbd8', paddingTop: 16 }}>
+             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#1B3A2D', margin: '0 0 6px', fontWeight: 700, letterSpacing: '0.1em' }}>AUTOR</p>
+             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#444', margin: 0 }}>
+               {entry.data.author}
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style={{ backgroundColor: '#fff', paddingTop: '80px', paddingBottom: '120px' }}>
+      <div className="editorial-grid" style={{ maxWidth: 1200, margin: '0 auto', paddingLeft: '5%', paddingRight: '5%', display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '40px' }}>
+        
+        <div style={{ gridColumn: '1 / span 4' }}>
+          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 'clamp(20px, 2vw, 24px)', color: '#141414', lineHeight: 1.5, margin: 0, fontWeight: 500 }}>
+            {entry.data.description}
+          </p>
+        </div>
+        
+        <div style={{ gridColumn: '6 / span 6' }}>
+          <article class="editorial-prose">
+            <Content />
+          </article>
+        </div>
+        
+      </div>
     </div>
 
   </main>
@@ -49,43 +76,104 @@ const { Content } = await render(entry);
 </Layout>
 
 <style is:global>
-  /* Podstawowe style dla wpisów z Markdown (ponieważ nie mamy pełnego pluginu typography z tailwinda zainstalowanego) */
-  article.prose h2 {
+  /* Styl Magazynowy */
+  .editorial-prose {
+    font-family: 'DM Sans', sans-serif;
+    color: #141414;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .editorial-prose h2 {
     font-family: 'Syne', sans-serif;
-    font-size: 28px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    color: #141414;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  .editorial-prose h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(22px, 3vw, 26px);
     font-weight: 700;
     margin-top: 48px;
     margin-bottom: 24px;
-    color: #172136;
+    color: #1B3A2D;
   }
-  article.prose h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    color: #172136;
-  }
-  article.prose p {
+  .editorial-prose p {
     margin-bottom: 24px;
   }
-  article.prose ul {
-    list-style-type: disc;
+  .editorial-prose ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+  .editorial-prose li {
+    margin-bottom: 12px;
+    position: relative;
     padding-left: 24px;
-    margin-bottom: 24px;
   }
-  article.prose li {
-    margin-bottom: 8px;
+  .editorial-prose li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #B8832A;
+    font-weight: bold;
   }
-  article.prose a {
-    color: #00a46e; /* Złapany kolor akcentu */
+  .editorial-prose a {
+    color: #1B3A2D;
     text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
   }
-  article.prose blockquote {
-    border-left: 4px solid #B8832A;
-    padding-left: 20px;
-    font-style: italic;
-    color: #717171;
-    margin: 32px 0;
+  .editorial-prose a:hover {
+    color: #B8832A;
+  }
+  .editorial-prose blockquote {
+    border: none;
+    padding: 24px 0;
+    margin: 80px 0;
+    position: relative;
+  }
+  .editorial-prose blockquote::before {
+    content: '"';
+    font-family: 'Syne', sans-serif;
+    font-size: 140px;
+    color: #F6F6F4;
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    z-index: 0;
+    line-height: 1;
+  }
+  .editorial-prose blockquote p {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(26px, 3vw, 36px);
+    color: #1B3A2D;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.01em;
+  }
+  .editorial-prose blockquote strong {
+    color: #B8832A;
+  }
+  
+  @media (max-width: 900px) {
+    .editorial-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 32px !important;
+    }
+    .editorial-grid > div {
+      grid-column: 1 / -1 !important;
+    }
+    .editorial-prose blockquote::before {
+      left: -10px;
+    }
   }
 </style>
