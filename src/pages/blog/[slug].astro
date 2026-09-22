@@ -162,6 +162,27 @@ const { Content } = await render(entry);
   .editorial-prose blockquote strong {
     color: #B8832A;
   }
+  .editorial-prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 48px 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+  }
+  .editorial-prose th, .editorial-prose td {
+    padding: 16px;
+    border-bottom: 1px solid #E2E0DC;
+    text-align: left;
+  }
+  .editorial-prose th {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: #1B3A2D;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #1B3A2D;
+  }
+  .editorial-prose tr:hover td {
+    background-color: #F6F6F4;
+  }
   
   @media (max-width: 900px) {
     .editorial-grid {
