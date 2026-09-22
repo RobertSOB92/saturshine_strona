@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title="Blog | SaturShine" description="Baza wiedzy o sprzątaniu biur i obiektów komercyjnych.">
+  <Header client:load />
+
+  <main style={{ minHeight: '80vh', paddingTop: '120px', paddingBottom: '80px', maxWidth: 800, margin: '0 auto', paddingLeft: 20, paddingRight: 20 }}>
+    <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(32px, 5vw, 48px)', color: '#172136', marginBottom: 40 }}>
+      Blog & Porady
+    </h1>
+
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
+      {posts.map(post => (
+        <article style={{ borderBottom: '1px solid #E2E0DC', paddingBottom: 40 }}>
+          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', marginBottom: 8 }}>
+            {post.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+          <h2 style={{ fontFamily: 'Syne, sans-serif', fontSize: 28, margin: '0 0 16px' }}>
+            <a href={`/blog/${post.id}`} style={{ color: '#172136', textDecoration: 'none' }}>
+              {post.data.title}
+            </a>
+          </h2>
+          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#444', lineHeight: 1.6, marginBottom: 20 }}>
+            {post.data.description}
+          </p>
+          <a href={`/blog/${post.id}`} style={{ fontFamily: 'Syne, sans-serif', fontWeight: 600, color: '#1B3A2D', textDecoration: 'none' }}>
+            Czytaj dalej →
+          </a>
+        </article>
+      ))}
+      
+      {posts.length === 0 && (
+        <p style={{ fontFamily: 'DM Sans, sans-serif', color: '#717171' }}>Wkrótce pojawią się tu pierwsze artykuły!</p>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

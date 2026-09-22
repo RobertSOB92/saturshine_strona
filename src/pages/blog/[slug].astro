@@ -1,0 +1,91 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={`${entry.data.title} | SaturShine`} description={entry.data.description}>
+  <Header client:load />
+
+  <main style={{ minHeight: '80vh', paddingTop: '120px', paddingBottom: '80px', maxWidth: 720, margin: '0 auto', paddingLeft: 20, paddingRight: 20 }}>
+    
+    <header style={{ marginBottom: 40 }}>
+      <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+        {entry.data.date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' })} • {entry.data.author}
+      </p>
+      <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', color: '#172136', lineHeight: 1.1, margin: '0 0 24px' }}>
+        {entry.data.title}
+      </h1>
+      <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 20, color: '#444', lineHeight: 1.6 }}>
+        {entry.data.description}
+      </p>
+    </header>
+
+    <article class="prose prose-lg max-w-none" style={{ fontFamily: 'DM Sans, sans-serif', color: '#172136', lineHeight: 1.8 }}>
+      <Content />
+    </article>
+
+    <div style={{ marginTop: 60, paddingTop: 40, borderTop: '1px solid #E2E0DC', textAlign: 'center' }}>
+      <a href="/blog" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 600, color: '#1B3A2D', textDecoration: 'none' }}>
+        ← Wróć do listy artykułów
+      </a>
+    </div>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<style is:global>
+  /* Podstawowe style dla wpisów z Markdown (ponieważ nie mamy pełnego pluginu typography z tailwinda zainstalowanego) */
+  article.prose h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    color: #172136;
+  }
+  article.prose h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #172136;
+  }
+  article.prose p {
+    margin-bottom: 24px;
+  }
+  article.prose ul {
+    list-style-type: disc;
+    padding-left: 24px;
+    margin-bottom: 24px;
+  }
+  article.prose li {
+    margin-bottom: 8px;
+  }
+  article.prose a {
+    color: #00a46e; /* Złapany kolor akcentu */
+    text-decoration: underline;
+  }
+  article.prose blockquote {
+    border-left: 4px solid #B8832A;
+    padding-left: 20px;
+    font-style: italic;
+    color: #717171;
+    margin: 32px 0;
+  }
+</style>

@@ -1,12 +1,26 @@
+---
+import '../index.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "SaturShine | Profesjonalne Sprzątanie Biur Warszawa — Mycie Okien, Pranie Wykładzin, Polimerowanie Podłóg", 
+  description = "SaturShine — profesjonalne sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie i okolicach. Bezpłatna wycena po oględzinach. Elastyczne terminy, bezpośredni kontakt z ekipą."
+} = Astro.props;
+---
+
 <!doctype html>
-<html lang="pl">
+<html lang="pl" style="scroll-behavior: smooth;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO -->
-    <title>SaturShine | Profesjonalne Sprzątanie Biur Warszawa — Mycie Okien, Pranie Wykładzin, Polimerowanie Podłóg</title>
-    <meta name="description" content="SaturShine — profesjonalne sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie i okolicach. Bezpłatna wycena po oględzinach. Elastyczne terminy, bezpośredni kontakt z ekipą." />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <meta name="keywords" content="sprzątanie biur Warszawa, mycie okien Warszawa, pranie wykładzin, polimerowanie podłóg, firma sprzątająca Warszawa, sprzątanie biurowe, mycie przeszkleń" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://saturshine.pl/" />
@@ -14,25 +28,25 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://saturshine.pl/" />
-    <meta property="og:title" content="SaturShine | Profesjonalne Sprzątanie Biur Warszawa" />
-    <meta property="og:description" content="Sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie. Bezpłatna wycena po oględzinach." />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:locale" content="pl_PL" />
     <meta property="og:site_name" content="SaturShine" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SaturShine | Profesjonalne Sprzątanie Biur Warszawa" />
-    <meta name="twitter:description" content="Sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie. Bezpłatna wycena po oględzinach." />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
 
-    <!-- Favicon placeholder -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data (Main) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -57,9 +71,9 @@
       ]
     }
     </script>
+    <slot name="head" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body style="margin: 0; padding: 0;">
+    <slot />
   </body>
 </html>

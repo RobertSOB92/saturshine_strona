@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import Process from '../components/Process';
+import WhyUs from '../components/WhyUs';
+import ContactForm from '../components/ContactForm';
+import ContactInfo from '../components/ContactInfo';
+import Footer from '../components/Footer';
+---
+
+<Layout>
+  <a
+    href="#uslugi"
+    style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;"
+    class="focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#C8913A] focus:text-white focus:rounded-sm focus:font-body focus:text-sm"
+  >
+    Przejdź do treści głównej
+  </a>
+
+  <Header client:load />
+
+  <main id="main-content">
+    <Hero client:load />
+    <Services />
+    <Process client:visible />
+    <WhyUs client:visible />
+    <ContactForm client:visible />
+    <ContactInfo />
+  </main>
+
+  <Footer />
+</Layout>
