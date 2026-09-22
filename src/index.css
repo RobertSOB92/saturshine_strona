@@ -96,3 +96,21 @@ p { margin: 0; }
 .hero-sidebar-link:hover {
   color: #1B3A2D !important;
 }
+
+/* Fix for Hero flex-wrap CLS */
+@media (min-width: 769px) {
+  .hero-content {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    /* Move gaps to grid */
+    column-gap: clamp(4rem, 8vw, 12rem);
+  }
+}
+
+/* Force rigid height on Hero content to guarantee 0 CLS on font swap */
+@media (min-width: 769px) {
+  .hero-parallax-target {
+    height: 460px;
+  }
+}
