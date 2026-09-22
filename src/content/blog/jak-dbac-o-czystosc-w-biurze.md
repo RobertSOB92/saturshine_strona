@@ -1,7 +1,7 @@
 ---
 title: "Jak dbać o czystość w biurze? Poradnik dla managera"
-date: 2026-09-22
-description: "Czyste biuro to nie tylko kwestia estetyki, ale przede wszystkim zdrowia i produktywności zespołu. Zobacz, na co zwrócić uwagę wybierając firmę sprzątającą."
+date: 2026-08-15
+description: "Praktyczne wskazówki dla biur w Warszawie, jak utrzymać perfekcyjną czystość na co dzień."
 author: "SaturShine"
 ---
 
