@@ -65,7 +65,7 @@ function buildMailto(d: FormData): string {
 // Input styles
 const inputStyle: React.CSSProperties = {
   width: '100%', padding: '11px 14px',
-  fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#171717',
+  fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#172136',
   background: '#fff', border: '1px solid #E2E0DC',
   borderRadius: 2, outline: 'none',
   transition: 'border-color 0.2s',
@@ -138,7 +138,7 @@ export default function ContactForm() {
               <h2 id="form-heading" style={{
                 fontFamily: 'Syne, sans-serif', fontWeight: 800,
                 fontSize: 'clamp(32px, 4.5vw, 60px)',
-                letterSpacing: '-0.03em', color: '#171717', lineHeight: 1.05, margin: 0,
+                letterSpacing: '-0.03em', color: '#172136', lineHeight: 1.05, margin: 0,
               }}>
                 Powiedz nam,<br />czego potrzebujesz
               </h2>
@@ -176,7 +176,7 @@ export default function ContactForm() {
                   <path d="M5 13l4 4L19 7" stroke="#1B3A2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#171717', marginBottom: 12 }}>
+              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#172136', marginBottom: 12 }}>
                 Klient pocztowy się otworzył
               </h3>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, marginBottom: 20, maxWidth: 420, margin: '0 auto 20px' }}>

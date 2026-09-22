@@ -69,9 +69,9 @@ export default function Header() {
           aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'}
           style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 8, display: 'none' }}
         >
-          <span style={{ display: 'block', width: 22, height: 2, background: '#171717', marginBottom: 5, transition: 'all 0.3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }} />
-          <span style={{ display: 'block', width: 22, height: 2, background: '#171717', marginBottom: 5, opacity: menuOpen ? 0 : 1, transition: 'opacity 0.3s' }} />
-          <span style={{ display: 'block', width: 22, height: 2, background: '#171717', transition: 'all 0.3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }} />
+          <span style={{ display: 'block', width: 22, height: 2, background: '#172136', marginBottom: 5, transition: 'all 0.3s', transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }} />
+          <span style={{ display: 'block', width: 22, height: 2, background: '#172136', marginBottom: 5, opacity: menuOpen ? 0 : 1, transition: 'opacity 0.3s' }} />
+          <span style={{ display: 'block', width: 22, height: 2, background: '#172136', transition: 'all 0.3s', transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }} />
         </button>
       </div>
 
@@ -86,7 +86,7 @@ export default function Header() {
             <a key={link.href} href={link.href}
               onClick={() => setMenuOpen(false)}
               style={{
-                fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#171717',
+                fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#172136',
                 textDecoration: 'none', padding: '12px 0',
                 borderBottom: '1px solid #E2E0DC',
               }}

@@ -11,7 +11,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer
-      style={{ background: '#171717', borderTop: '1px solid #222' }}
+      style={{ background: '#172136', borderTop: '1px solid #222' }}
       aria-label="Stopka strony"
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '4rem 2.5rem 2rem' }}>

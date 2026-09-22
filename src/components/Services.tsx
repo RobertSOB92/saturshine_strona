@@ -119,7 +119,7 @@ export default function Services() {
           style={{
             fontFamily: 'Syne, sans-serif', fontWeight: 800,
             fontSize: 'clamp(36px, 5vw, 64px)',
-            letterSpacing: '-0.03em', color: '#171717',
+            letterSpacing: '-0.03em', color: '#172136',
             lineHeight: 1.05,
           }}
         >
@@ -185,7 +185,7 @@ export default function Services() {
               <h3 style={{
                 fontFamily: 'Syne, sans-serif', fontWeight: 700,
                 fontSize: 'clamp(22px, 2.5vw, 32px)',
-                letterSpacing: '-0.02em', color: '#171717',
+                letterSpacing: '-0.02em', color: '#172136',
                 margin: '0 0 8px',
               }}>{service.title}</h3>
 

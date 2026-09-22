@@ -72,7 +72,7 @@ export default function WhyUs() {
                 style={{
                   fontFamily: 'Syne, sans-serif', fontWeight: 800,
                   fontSize: 'clamp(24px, 3vw, 40px)',
-                  letterSpacing: '-0.02em', color: '#171717',
+                  letterSpacing: '-0.02em', color: '#172136',
                   lineHeight: 1.25, margin: 0,
                 }}
               >
@@ -98,7 +98,7 @@ export default function WhyUs() {
                 }}>{r.label}</span>
                 <h3 style={{
                   fontFamily: 'Syne, sans-serif', fontWeight: 700,
-                  fontSize: 22, letterSpacing: '-0.02em', color: '#171717',
+                  fontSize: 22, letterSpacing: '-0.02em', color: '#172136',
                   margin: '0 0 10px', lineHeight: 1.3,
                 }}>{r.headline}</h3>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7 }}>
@@ -122,7 +122,7 @@ export default function WhyUs() {
                 }}>{r.label}</span>
                 <h3 style={{
                   fontFamily: 'Syne, sans-serif', fontWeight: 700,
-                  fontSize: 22, letterSpacing: '-0.02em', color: '#171717',
+                  fontSize: 22, letterSpacing: '-0.02em', color: '#172136',
                   margin: '0 0 10px', lineHeight: 1.3,
                 }}>{r.headline}</h3>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7 }}>
