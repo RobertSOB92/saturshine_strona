@@ -2,18 +2,29 @@
   "specVersion": "1.0",
   "entries": [
     {
-      "identifier": "urn:ai:saturshine.pl:website",
+      "identifier": "urn:air:saturshine.pl:catalog:main",
       "displayName": "SaturShine Website",
-      "type": "text/html",
-      "url": "https://saturshine.pl/",
-      "description": "Oficjalna strona internetowa firmy sprzątającej SaturShine z Warszawy (B2B)."
+      "type": "application/ai-catalog+json",
+      "url": "https://saturshine.pl/ai-catalog.json",
+      "description": "Katalog zasobów firmy SaturShine – profesjonalne sprzątanie biur i obiektów komercyjnych w Warszawie.",
+      "representativeQueries": [
+        "Profesjonalne sprzątanie biur Warszawa",
+        "Firma sprzątająca obiekty komercyjne B2B",
+        "Wycena sprzątania biura w Warszawie"
+      ]
     },
     {
-      "identifier": "urn:ai:saturshine.pl:llms-manifest",
+      "identifier": "urn:air:saturshine.pl:skills:llm-docs",
       "displayName": "SaturShine LLM Documentation",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://saturshine.pl/.well-known/llms.txt",
-      "description": "Dokumentacja i informacje o uslugach firmy SaturShine zoptymalizowane do odczytu przez LLM."
+      "description": "Dokumentacja i informacje o usługach firmy SaturShine zoptymalizowane do odczytu przez modele językowe (LLM).",
+      "representativeQueries": [
+        "Jakie usługi sprzątania biur oferuje SaturShine?",
+        "Jak zamówić wycenę sprzątania w Warszawie?",
+        "Czy SaturShine zajmuje się praniem wykładzin i myciem okien?",
+        "Czy SaturShine obsługuje klientów B2B?"
+      ]
     }
   ]
 }
