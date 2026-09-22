@@ -185,7 +185,7 @@ export default function ContactForm() {
               </p>
               <button onClick={() => setSubmitted(false)} style={{
                 background: 'none', border: 'none', cursor: 'pointer',
-                fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#B0B0B0',
+                fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#767676',
                 textDecoration: 'underline',
               }}>Wyślij kolejne zapytanie</button>
             </div>
@@ -280,7 +280,7 @@ export default function ContactForm() {
               </div>
 
               {/* RODO */}
-              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', lineHeight: 1.6, margin: '1.5rem 0' }}>
+              <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', lineHeight: 1.6, margin: '1.5rem 0' }}>
                 Klikając „Wyślij" otwierasz swoją skrzynkę mailową z gotową wiadomością. Dane nie są przechowywane na serwerach strony.{' '}
                 <a href="/polityka-prywatnosci" style={{ color: '#717171' }}>Polityka prywatności</a>
               </p>

@@ -62,10 +62,10 @@ export default function ContactInfo() {
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <div>
-                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Telefon</span>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Telefon</span>
                 <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#172136' }}>{SITE_CONFIG.phone}</span>
               </div>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#767676' }}>
                 <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
@@ -85,17 +85,17 @@ export default function ContactInfo() {
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <div>
-                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>E-mail</span>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>E-mail</span>
                 <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#172136' }}>{SITE_CONFIG.email}</span>
               </div>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#767676' }}>
                 <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
 
             {/* Area */}
             <div style={{ padding: '20px 0' }}>
-              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Obszar działania</span>
+              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Obszar działania</span>
               <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#172136', display: 'block', marginBottom: 4 }}>{SITE_CONFIG.serviceArea}</span>
               <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171' }}>{SITE_CONFIG.serviceAreaDetail}</span>
             </div>

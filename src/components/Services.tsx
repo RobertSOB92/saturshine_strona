@@ -166,7 +166,7 @@ export default function Services() {
               }}>{service.lead}</p>
 
               <div style={{ marginBottom: 8 }}>
-                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em' }}>Dla kogo</span>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', textTransform: 'uppercase', letterSpacing: '0.18em' }}>Dla kogo</span>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', marginTop: 4, lineHeight: 1.55 }}>{service.forWho}</p>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function Services() {
             {/* Right: scope + note */}
             <div className="service-right" style={{ padding: '2rem 0 2rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 10 }}>
+                <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#767676', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 10 }}>
                   Co obejmuje
                 </span>
                 <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 6 }}>
