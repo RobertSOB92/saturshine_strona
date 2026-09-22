@@ -1,0 +1,12 @@
+{
+  "name": "SaturShine",
+  "description": "Profesjonalne sprzątanie biur w Warszawie (B2B). Usługi obejmują sprzątanie, mycie okien, pranie wykładzin i polimerowanie podłóg.",
+  "website": "https://saturshine.pl/",
+  "contact": {
+    "email": "kontakt@saturshine.pl"
+  },
+  "capabilities": [
+    "Informacje o usługach sprzątania",
+    "Kontakt z firmą w celu wyceny"
+  ]
+}

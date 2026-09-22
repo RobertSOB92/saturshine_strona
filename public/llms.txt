@@ -1,0 +1,18 @@
+# SaturShine - Profesjonalne Sprzątanie Biur
+
+SaturShine to firma sprzątająca działająca w Warszawie (B2B). 
+Specjalizujemy się w obsłudze biur, coworkingu oraz obiektów komercyjnych.
+Naszą przewagą jest bezpośredni kontakt z ekipą i elastyczne podejście, bez "korporacyjnych procedur" i pośredników z call center.
+
+## Usługi
+1. **Sprzątanie biur**: Codzienne i cykliczne sprzątanie, w tym obsługa sanitariatów i kuchni.
+2. **Mycie przeszkleń**: Okna, witryny, szklane ścianki działowe (bez dostępu alpinistycznego powyżej 3 metrów bez wcześniejszych ustaleń).
+3. **Pranie wykładzin**: Pranie ekstrakcyjne i szamponowanie.
+4. **Polimerowanie podłóg**: Akrylowanie, zabezpieczanie posadzek twardych.
+
+## Zasady
+- Firma nie posiada sztywnych pakietów z widełkami cenowymi. Każda wycena dokonywana jest bezpłatnie po oględzinach lokalu.
+- Zgłoszenia realizujemy zazwyczaj w ciągu kilku dni roboczych.
+- Kontakt: kontakt@saturshine.pl lub poprzez automatycznie otwierany klient e-mail po wypełnieniu formularza (firma nie przechowuje danych na serwerach strony).
+
+Website: https://saturshine.pl/
