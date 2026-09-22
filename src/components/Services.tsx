@@ -107,7 +107,6 @@ export default function Services() {
     >
       {/* Section header — full width, very minimal */}
       <div
-        className="fade-up"
         style={{
           maxWidth: 1200, margin: '0 auto', padding: '5rem 2.5rem 3rem',
           display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
@@ -135,7 +134,7 @@ export default function Services() {
         <article
           key={service.id}
           id={service.id}
-          className="fade-up"
+          className={idx > 0 ? "fade-up" : ""}
           style={{
             maxWidth: 1200,
             margin: '0 auto',
