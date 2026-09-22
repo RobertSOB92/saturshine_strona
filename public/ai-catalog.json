@@ -1,12 +1,19 @@
 {
-  "name": "SaturShine",
-  "description": "Profesjonalne sprzątanie biur w Warszawie (B2B). Usługi obejmują sprzątanie, mycie okien, pranie wykładzin i polimerowanie podłóg.",
-  "website": "https://saturshine.pl/",
-  "contact": {
-    "email": "kontakt@saturshine.pl"
-  },
-  "capabilities": [
-    "Informacje o usługach sprzątania",
-    "Kontakt z firmą w celu wyceny"
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:ai:saturshine.pl:website",
+      "displayName": "SaturShine Website",
+      "type": "text/html",
+      "url": "https://saturshine.pl/",
+      "description": "Oficjalna strona internetowa firmy sprzątającej SaturShine z Warszawy (B2B)."
+    },
+    {
+      "identifier": "urn:ai:saturshine.pl:llms-manifest",
+      "displayName": "SaturShine LLM Documentation",
+      "type": "text/markdown",
+      "url": "https://saturshine.pl/.well-known/llms.txt",
+      "description": "Dokumentacja i informacje o uslugach firmy SaturShine zoptymalizowane do odczytu przez LLM."
+    }
   ]
 }
