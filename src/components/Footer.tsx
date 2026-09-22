@@ -85,7 +85,7 @@ export default function Footer() {
               onMouseEnter={e => (e.currentTarget.style.color = '#717171')}
               onMouseLeave={e => (e.currentTarget.style.color = '#444')}
             >Polityka prywatności</a>
-            <a href="/sitemap.xml" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#444', textDecoration: 'none', transition: 'color 0.2s' }}
+            <a href="/sitemap-index.xml" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#444', textDecoration: 'none', transition: 'color 0.2s' }}
               onMouseEnter={e => (e.currentTarget.style.color = '#717171')}
               onMouseLeave={e => (e.currentTarget.style.color = '#444')}
             >Mapa strony</a>
