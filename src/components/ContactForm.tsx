@@ -281,7 +281,7 @@ export default function ContactForm() {
 
               {/* RODO */}
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', lineHeight: 1.6, margin: '1.5rem 0' }}>
-                Klikając „Wyślij" otwierasz swojego klienta pocztowego z gotową wiadomością. Dane nie są przechowywane na serwerach strony.{' '}
+                Klikając „Wyślij" otwierasz swoją skrzynkę mailową z gotową wiadomością. Dane nie są przechowywane na serwerach strony.{' '}
                 <a href="/polityka-prywatnosci" style={{ color: '#717171' }}>Polityka prywatności</a>
               </p>
 
