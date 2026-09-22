@@ -65,7 +65,7 @@ function buildMailto(d: FormData): string {
 // Input styles
 const inputStyle: React.CSSProperties = {
   width: '100%', padding: '11px 14px',
-  fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#141414',
+  fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#171717',
   background: '#fff', border: '1px solid #E2E0DC',
   borderRadius: 2, outline: 'none',
   transition: 'border-color 0.2s',
@@ -138,18 +138,18 @@ export default function ContactForm() {
               <h2 id="form-heading" style={{
                 fontFamily: 'Syne, sans-serif', fontWeight: 800,
                 fontSize: 'clamp(32px, 4.5vw, 60px)',
-                letterSpacing: '-0.03em', color: '#141414', lineHeight: 1.05, margin: 0,
+                letterSpacing: '-0.03em', color: '#171717', lineHeight: 1.05, margin: 0,
               }}>
                 Powiedz nam,<br />czego potrzebujesz
               </h2>
             </div>
             <div style={{ maxWidth: 340, paddingTop: 4 }}>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7 }}>
-                Formularz otwiera Twój klient pocztowy z gotową wiadomością.
+                Formularz otworzy Twoją skrzynkę mailową z gotową wiadomością.
                 Wysyłasz ją sam — Twoje dane nie trafiają na żaden serwer.
               </p>
               <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {['Klient pocztowy otwiera się automatycznie', 'Odpiszemy w ciągu 24 h roboczych', 'Bezpłatne oględziny po wstępnym zgłoszeniu'].map((t, i) => (
+                {['Skrzynka mailowa otwiera się automatycznie', 'Odpiszemy w ciągu 24 h roboczych', 'Bezpłatne oględziny po wstępnym zgłoszeniu'].map((t, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
                     <span style={{ marginTop: 4, width: 14, height: 14, borderRadius: '50%', background: '#e8f0eb', border: '1px solid #c8ddd0', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#1B3A2D', display: 'block' }} />
@@ -173,10 +173,10 @@ export default function ContactForm() {
                 margin: '0 auto 20px',
               }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M5 13l4 4L19 7" stroke="#1B3A2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M5 13l4 4L19 7" stroke="#1B3A2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414', marginBottom: 12 }}>
+              <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#171717', marginBottom: 12 }}>
                 Klient pocztowy się otworzył
               </h3>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, marginBottom: 20, maxWidth: 420, margin: '0 auto 20px' }}>

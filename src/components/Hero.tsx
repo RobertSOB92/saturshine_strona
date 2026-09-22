@@ -72,7 +72,7 @@ export default function Hero() {
                 fontSize: 'clamp(24px, 5vw, 76px)',
                 lineHeight: 1.02,
                 letterSpacing: '-0.03em',
-                color: '#141414',
+                color: '#171717',
                 margin: 0,
               }}
             >
@@ -115,7 +115,7 @@ export default function Hero() {
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 8,
                       padding: '14px 28px',
-                      background: 'transparent', color: '#141414',
+                      background: 'transparent', color: '#171717',
                       fontFamily: 'DM Sans, sans-serif', fontSize: 14,
                       textDecoration: 'none', borderRadius: 2,
                       border: '1px solid #C8C4BE', transition: 'border-color 0.2s',
@@ -155,10 +155,10 @@ export default function Hero() {
                   padding: '10px 0',
                   borderBottom: i < 3 ? '1px solid #EEECEA' : 'none',
                   textDecoration: 'none',
-                  color: '#141414', transition: 'color 0.2s',
+                  color: '#171717', transition: 'color 0.2s',
                 }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#1B3A2D')}
-                onMouseLeave={e => (e.currentTarget.style.color = '#141414')}
+                onMouseLeave={e => (e.currentTarget.style.color = '#171717')}
               >
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 10, color: '#B8832A', letterSpacing: '0.15em' }}>{item.n}</span>
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13 }}>{item.label}</span>

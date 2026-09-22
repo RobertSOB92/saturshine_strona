@@ -25,7 +25,7 @@ const STEPS = [
   },
   {
     number: '02',
-    title: 'Bezpłatne oględziny',
+    title: 'Wizja lokalna',
     body: 'Przyjeżdżamy na obiekt. Oceniamy stan pomieszczeń, metraż i dostępność. Bez zobowiązań — wizyta jest bezpłatna.',
     meta: 'Termin ustalamy elastycznie',
   },
@@ -62,7 +62,7 @@ export default function Process() {
             style={{
               fontFamily: 'Syne, sans-serif', fontWeight: 800,
               fontSize: 'clamp(32px, 5vw, 64px)',
-              letterSpacing: '-0.03em', color: '#141414',
+              letterSpacing: '-0.03em', color: '#171717',
               lineHeight: 1.05, margin: 0,
             }}
           >
@@ -88,7 +88,7 @@ export default function Process() {
                   display: 'block', marginBottom: -8,
                   letterSpacing: '-0.03em',
                 }} aria-hidden="true">{step.number}</span>
-                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: '0 0 8px' }}>
+                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#171717', margin: '0 0 8px' }}>
                   {step.title}
                 </h3>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px' }}>
@@ -111,7 +111,7 @@ export default function Process() {
                   display: 'block', marginBottom: -8,
                   letterSpacing: '-0.03em',
                 }} aria-hidden="true">{step.number}</span>
-                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#141414', margin: '0 0 8px' }}>
+                <h3 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 20, color: '#171717', margin: '0 0 8px' }}>
                   {step.title}
                 </h3>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, margin: '0 0 12px' }}>

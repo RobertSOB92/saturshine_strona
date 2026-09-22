@@ -35,7 +35,7 @@ export default function ContactInfo() {
             <h2 id="contact-heading" style={{
               fontFamily: 'Syne, sans-serif', fontWeight: 800,
               fontSize: 'clamp(28px, 3.5vw, 48px)',
-              letterSpacing: '-0.025em', color: '#141414',
+              letterSpacing: '-0.025em', color: '#171717',
               lineHeight: 1.1, margin: '0 0 20px',
             }}>
               Napisz lub zadzwoń<br />
@@ -63,7 +63,7 @@ export default function ContactInfo() {
             >
               <div>
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Telefon</span>
-                <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414' }}>{SITE_CONFIG.phone}</span>
+                <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#171717' }}>{SITE_CONFIG.phone}</span>
               </div>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
                 <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -86,7 +86,7 @@ export default function ContactInfo() {
             >
               <div>
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>E-mail</span>
-                <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414' }}>{SITE_CONFIG.email}</span>
+                <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#171717' }}>{SITE_CONFIG.email}</span>
               </div>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={{ color: '#B0B0B0' }}>
                 <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -96,7 +96,7 @@ export default function ContactInfo() {
             {/* Area */}
             <div style={{ padding: '20px 0' }}>
               <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#B0B0B0', textTransform: 'uppercase', letterSpacing: '0.18em', display: 'block', marginBottom: 4 }}>Obszar działania</span>
-              <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#141414', display: 'block', marginBottom: 4 }}>{SITE_CONFIG.serviceArea}</span>
+              <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: 22, color: '#171717', display: 'block', marginBottom: 4 }}>{SITE_CONFIG.serviceArea}</span>
               <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171' }}>{SITE_CONFIG.serviceAreaDetail}</span>
             </div>
           </div>
