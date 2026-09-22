@@ -24,9 +24,9 @@ posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
     </div>
     
     <div style={{ backgroundColor: '#fff', paddingTop: '40px', paddingBottom: '120px' }}>
-      <div className="blog-list-grid" style={{ maxWidth: 1200, margin: '0 auto', paddingLeft: '5%', paddingRight: '5%' }}>
+      <div class="blog-list-grid" style={{ maxWidth: 1200, margin: '0 auto', paddingLeft: '5%', paddingRight: '5%' }}>
         {posts.map((post, index) => (
-          <article className="blog-list-item" style={{ 
+          <article class="blog-list-item" style={{ 
             display: 'grid', 
             gridTemplateColumns: 'repeat(12, 1fr)', 
             gap: '40px', 
@@ -41,16 +41,16 @@ posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
             </div>
             <div style={{ gridColumn: '4 / span 9' }}>
               <h2 style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(28px, 3vw, 40px)', margin: '0 0 24px', lineHeight: 1.15, letterSpacing: '-0.01em', fontWeight: 800 }}>
-                <a href={`/blog/${post.id}`} className="blog-title-link" style={{ color: '#141414', textDecoration: 'none', transition: 'color 0.3s' }}>
+                <a href={`/blog/${post.id}`} class="blog-title-link" style={{ color: '#141414', textDecoration: 'none', transition: 'color 0.3s' }}>
                   {post.data.title}
                 </a>
               </h2>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 18, color: '#444', lineHeight: 1.6, margin: '0 0 32px', maxWidth: 600 }}>
                 {post.data.description}
               </p>
-              <a href={`/blog/${post.id}`} className="read-more-link" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, fontWeight: 700, color: '#1B3A2D', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              <a href={`/blog/${post.id}`} class="read-more-link" style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, fontWeight: 700, color: '#1B3A2D', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                 Czytaj artykuł 
-                <span className="arrow">→</span>
+                <span class="arrow">→</span>
               </a>
             </div>
           </article>
