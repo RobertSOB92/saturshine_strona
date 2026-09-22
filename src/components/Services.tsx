@@ -78,6 +78,7 @@ export default function Services() {
     <section id="uslugi" className="reveal-section" style={{ background: '#FFFFFF', padding: '0 0 6rem' }}>
       {/* Section header — full width, very minimal */}
       <div
+        className="services-header"
         style={{
           maxWidth: 1200, margin: '0 auto', padding: '5rem 2.5rem 3rem',
           display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
@@ -233,6 +234,14 @@ export default function Services() {
           }
           #uslugi .service-right {
             padding: 1rem 0 2rem 0 !important;
+          }
+          #uslugi .services-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 1rem;
+          }
+          #uslugi .services-header p {
+            text-align: left !important;
           }
         }
       `}</style>
