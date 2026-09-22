@@ -1,25 +1,3 @@
-import { useEffect, useRef } from 'react';
-
-function useReveal(threshold = 0.1) {
-  const ref = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold });
-    el.querySelectorAll('.fade-up').forEach(t => obs.observe(t));
-    if (el.classList.contains('fade-up')) obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
-}
-
 // Each service has a completely different layout
 const SERVICES = [
   {
@@ -96,15 +74,8 @@ const SERVICES = [
 ];
 
 export default function Services() {
-  const ref = useReveal() as React.RefObject<HTMLElement>;
-
   return (
-    <section
-      id="uslugi"
-      ref={ref as React.RefObject<HTMLElement>}
-      aria-labelledby="services-heading"
-      style={{ background: '#fff', paddingBottom: '6rem' }}
-    >
+    <section id="uslugi" className="reveal-section" style={{ background: '#FFFFFF', padding: '0 0 6rem' }}>
       {/* Section header — full width, very minimal */}
       <div
         style={{
@@ -234,15 +205,14 @@ export default function Services() {
       <div className="fade-up" style={{ maxWidth: 1200, margin: '0 auto', padding: '2.5rem 2.5rem 0' }}>
         <a
           href="#wycena"
+          className="btn-primary"
           style={{
             display: 'inline-flex', alignItems: 'center', gap: 8,
-            fontFamily: 'Syne, sans-serif', fontWeight: 600, fontSize: 14,
-            color: '#1B3A2D', textDecoration: 'none', letterSpacing: '0.02em',
-            borderBottom: '1px solid #1B3A2D', paddingBottom: 2,
-            transition: 'opacity 0.2s',
+            padding: '12px 24px',
+            background: '#1B3A2D', color: '#fff',
+            fontFamily: 'Syne, sans-serif', fontWeight: 600, fontSize: 13,
+            textDecoration: 'none', borderRadius: 2,
           }}
-          onMouseEnter={e => (e.currentTarget.style.opacity = '0.6')}
-          onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
         >
           Zapytaj o wycenę →
         </a>

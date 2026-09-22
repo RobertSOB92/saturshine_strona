@@ -1,19 +1,4 @@
-import { useEffect, useRef } from 'react';
-
 export default function Hero() {
-  const textRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Subtle parallax on scroll
-    const onScroll = () => {
-      if (!textRef.current) return;
-      const y = window.scrollY;
-      textRef.current.style.transform = `translateY(${y * 0.08}px)`;
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
     <section
       id="hero"
@@ -54,7 +39,7 @@ export default function Hero() {
 
       {/* Main content block — bottom-anchored */}
       <div
-        ref={textRef}
+        className="hero-parallax-target"
         style={{
           position: 'relative',
           zIndex: 1,
@@ -94,16 +79,14 @@ export default function Hero() {
                   <a
                     href="#wycena"
                     id="hero-cta-primary"
+                    className="btn-primary"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 8,
                       padding: '14px 28px',
                       background: '#1B3A2D', color: '#fff',
                       fontFamily: 'Syne, sans-serif', fontWeight: 600, fontSize: 14,
                       textDecoration: 'none', borderRadius: 2, letterSpacing: '0.02em',
-                      transition: 'background 0.2s',
                     }}
-                    onMouseEnter={e => (e.currentTarget.style.background = '#2d5c45')}
-                    onMouseLeave={e => (e.currentTarget.style.background = '#1B3A2D')}
                   >
                     Poproś o bezpłatną wycenę
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -113,16 +96,15 @@ export default function Hero() {
                   <a
                     href="#uslugi"
                     id="hero-cta-secondary"
+                    className="btn-secondary"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 8,
                       padding: '14px 28px',
                       background: 'transparent', color: '#172136',
                       fontFamily: 'DM Sans, sans-serif', fontSize: 14,
                       textDecoration: 'none', borderRadius: 2,
-                      border: '1px solid #C8C4BE', transition: 'border-color 0.2s',
+                      border: '1px solid #C8C4BE',
                     }}
-                    onMouseEnter={e => (e.currentTarget.style.borderColor = '#1B3A2D')}
-                    onMouseLeave={e => (e.currentTarget.style.borderColor = '#C8C4BE')}
                   >
                     Poznaj usługi
                   </a>
@@ -151,15 +133,14 @@ export default function Hero() {
               <a
                 key={i}
                 href={`#${['sprzatanie-biur','mycie-przeszklen','pranie-wykladziN','polimerowanie-podlog'][i]}`}
+                className="hero-sidebar-link"
                 style={{
                   display: 'flex', alignItems: 'baseline', gap: 10,
                   padding: '10px 0',
                   borderBottom: i < 3 ? '1px solid #EEECEA' : 'none',
                   textDecoration: 'none',
-                  color: '#172136', transition: 'color 0.2s',
+                  color: '#172136',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#1B3A2D')}
-                onMouseLeave={e => (e.currentTarget.style.color = '#172136')}
               >
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 10, color: '#B8832A', letterSpacing: '0.15em' }}>{item.n}</span>
                 <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13 }}>{item.label}</span>

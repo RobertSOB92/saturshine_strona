@@ -22,13 +22,39 @@ import Footer from '../components/Footer';
   <Header client:idle />
 
   <main id="main-content">
-    <Hero client:idle />
-    <Services client:idle />
-    <Process client:idle />
-    <WhyUs client:idle />
+    <Hero />
+    <Services />
+    <Process />
+    <WhyUs />
     <ContactForm client:idle />
-    <ContactInfo client:idle />
+    <ContactInfo />
   </main>
+
+  <script>
+    // Parallax effect for Hero
+    const parallaxTarget = document.querySelector('.hero-parallax-target');
+    const onScroll = () => {
+      if (parallaxTarget) {
+        const y = window.scrollY;
+        parallaxTarget.style.transform = `translateY(${y * 0.08}px)`;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // IntersectionObserver for Reveal effects
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    
+    document.querySelectorAll('.reveal-section').forEach(section => {
+      section.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    });
+  </script>
 
   <Footer />
 </Layout>

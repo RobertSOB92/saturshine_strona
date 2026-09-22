@@ -1,21 +1,3 @@
-import { useEffect, useRef } from 'react';
-
-function useReveal() {
-  const ref = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    el.querySelectorAll('.fade-up').forEach(t => obs.observe(t));
-    return () => obs.disconnect();
-  }, []);
-  return ref;
-}
-
 const REASONS = [
   {
     label: 'Bezpośredni kontakt',
@@ -40,15 +22,8 @@ const REASONS = [
 ];
 
 export default function WhyUs() {
-  const ref = useReveal();
-
   return (
-    <section
-      id="dlaczego"
-      ref={ref as React.RefObject<HTMLElement>}
-      aria-labelledby="whyus-heading"
-      style={{ background: '#fff', padding: '6rem 0' }}
-    >
+    <section id="dlaczego" className="reveal-section" style={{ background: '#fff', padding: '6rem 0' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2.5rem' }}>
 
         {/* Big pull-quote style header */}

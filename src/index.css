@@ -74,3 +74,25 @@ p { margin: 0; }
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
+
+/* Hover effects for static components */
+.btn-primary {
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #2d5c45 !important;
+}
+
+.btn-secondary {
+  transition: border-color 0.2s;
+}
+.btn-secondary:hover {
+  border-color: #1B3A2D !important;
+}
+
+.hero-sidebar-link {
+  transition: color 0.2s;
+}
+.hero-sidebar-link:hover {
+  color: #1B3A2D !important;
+}

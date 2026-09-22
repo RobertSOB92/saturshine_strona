@@ -1,21 +1,3 @@
-import { useEffect, useRef } from 'react';
-
-function useReveal() {
-  const ref = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    el.querySelectorAll('.fade-up').forEach(t => obs.observe(t));
-    return () => obs.disconnect();
-  }, []);
-  return ref;
-}
-
 const STEPS = [
   {
     number: '01',
@@ -44,15 +26,8 @@ const STEPS = [
 ];
 
 export default function Process() {
-  const ref = useReveal();
-
   return (
-    <section
-      id="wspolpraca"
-      ref={ref as React.RefObject<HTMLElement>}
-      aria-labelledby="process-heading"
-      style={{ background: '#F6F6F4', padding: '6rem 0' }}
-    >
+    <section id="wspolpraca" className="reveal-section" style={{ background: '#F6F6F4', padding: '6rem 0' }}>
       <div className="section-container">
 
         {/* Header */}
@@ -127,14 +102,13 @@ export default function Process() {
             <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid #E2E0DC' }}>
               <a
                 href="#wycena"
+                className="btn-primary"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '12px 24px', background: '#1B3A2D', color: '#fff',
                   fontFamily: 'Syne, sans-serif', fontWeight: 600, fontSize: 13,
-                  textDecoration: 'none', borderRadius: 2, transition: 'background 0.2s',
+                  textDecoration: 'none', borderRadius: 2,
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = '#2d5c45')}
-                onMouseLeave={e => (e.currentTarget.style.background = '#1B3A2D')}
               >
                 Zacznij od zgłoszenia →
               </a>
