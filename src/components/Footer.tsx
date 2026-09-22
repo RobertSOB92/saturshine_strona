@@ -1,10 +1,10 @@
 import { SITE_CONFIG, COMPANY_NAME } from '../config/site';
 
 const SERVICES_LINKS = [
-  { label: 'Sprzątanie biur', href: '#sprzatanie-biur' },
-  { label: 'Mycie przeszkleń', href: '#mycie-przeszklen' },
-  { label: 'Pranie wykładzin', href: '#pranie-wykladziN' },
-  { label: 'Polimerowanie podłóg', href: '#polimerowanie-podlog' },
+  { label: 'Sprzątanie biur', href: '/#sprzatanie-biur' },
+  { label: 'Mycie przeszkleń', href: '/#mycie-przeszklen' },
+  { label: 'Pranie wykładzin', href: '/#pranie-wykladziN' },
+  { label: 'Polimerowanie podłóg', href: '/#polimerowanie-podlog' },
 ];
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '2rem', paddingBottom: '3rem', borderBottom: '1px solid #2a2a2a' }}>
           {/* Brand */}
           <div>
-            <a href="#" style={{ display: 'block', textDecoration: 'none', marginBottom: 12 }} aria-label={`${COMPANY_NAME} — strona główna`}>
+            <a href="/" style={{ display: 'block', textDecoration: 'none', marginBottom: 12 }} aria-label={`${COMPANY_NAME} — strona główna`}>
               <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 18, color: '#fff', letterSpacing: '-0.03em' }}>
                 Satur<span style={{ color: '#B8832A' }}>Shine</span>
               </span>
@@ -47,10 +47,10 @@ export default function Footer() {
             <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 10, color: '#444', textTransform: 'uppercase', letterSpacing: '0.2em', display: 'block', marginBottom: 12 }}>Firma</span>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {[
-                { label: 'Jak działamy', href: '#wspolpraca' },
-                { label: 'Dlaczego SaturShine', href: '#dlaczego' },
-                { label: 'Zapytaj o wycenę', href: '#wycena' },
-                { label: 'Kontakt', href: '#kontakt' },
+                { label: 'Jak działamy', href: '/#wspolpraca' },
+                { label: 'Dlaczego SaturShine', href: '/#dlaczego' },
+                { label: 'Zapytaj o wycenę', href: '/#wycena' },
+                { label: 'Kontakt', href: '/#kontakt' },
               ].map(l => (
                 <a key={l.href} href={l.href} style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 13, color: '#717171', textDecoration: 'none', transition: 'color 0.2s' }}
                   onMouseEnter={e => (e.currentTarget.style.color = '#fff')}

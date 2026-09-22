@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { COMPANY_NAME } from '../config/site';
 
 const navLinks = [
-  { label: 'Usługi', href: '#uslugi' },
-  { label: 'Jak działamy', href: '#wspolpraca' },
-  { label: 'Dlaczego my', href: '#dlaczego' },
-  { label: 'Kontakt', href: '#kontakt' },
+  { label: 'Usługi', href: '/#uslugi' },
+  { label: 'Jak działamy', href: '/#wspolpraca' },
+  { label: 'Dlaczego my', href: '/#dlaczego' },
+  { label: 'Kontakt', href: '/#kontakt' },
 ];
 
 export default function Header() {
@@ -30,7 +30,7 @@ export default function Header() {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 64 }}>
         {/* Wordmark */}
-        <a href="#" aria-label={`${COMPANY_NAME} — strona główna`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+        <a href="/" aria-label={`${COMPANY_NAME} — strona główna`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 20, color: '#1B3A2D', letterSpacing: '-0.5px' }}>
             Satur<span style={{ color: '#B8832A' }}>Shine</span>
           </span>
@@ -48,7 +48,7 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <a href="#wycena"
+        <a href="/#wycena"
           className="hidden-mobile"
           style={{
             fontFamily: 'Syne, sans-serif', fontWeight: 600, fontSize: 13,
@@ -92,7 +92,7 @@ export default function Header() {
               }}
             >{link.label}</a>
           ))}
-          <a href="#wycena" onClick={() => setMenuOpen(false)}
+          <a href="/#wycena" onClick={() => setMenuOpen(false)}
             style={{
               marginTop: 12, padding: '12px 0', textAlign: 'center',
               background: '#1B3A2D', color: '#fff',
