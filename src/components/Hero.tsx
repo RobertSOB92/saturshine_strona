@@ -2,13 +2,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
+      className="hero-section"
       aria-label="Sekcja główna"
       style={{
         minHeight: '100vh',
         background: '#FFFFFF',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end',
         paddingTop: 64,
         position: 'relative',
         overflow: 'hidden',
@@ -17,7 +17,7 @@ export default function Hero() {
 
       {/* Top label strip */}
       <div
-        className="section-container"
+        className="section-container hero-top-labels"
         style={{
           position: 'absolute',
           top: 80,
@@ -154,7 +154,18 @@ export default function Hero() {
       <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 1, background: '#E2E0DC' }} aria-hidden="true" />
 
       <style>{`
+        .hero-section {
+          justify-content: flex-end;
+        }
         @media (max-width: 768px) {
+          .hero-section {
+            justify-content: center !important;
+          }
+          .hero-top-labels {
+            flex-direction: column;
+            gap: 8px;
+            top: 100px !important;
+          }
           #hero .hero-content {
             flex-direction: column !important;
             align-items: flex-start !important;
