@@ -2,9 +2,9 @@
   "specVersion": "1.0",
   "entries": [
     {
-      "identifier": "urn:air:saturshine.pl:website:main",
+      "identifier": "urn:air:saturshine:website:main",
       "displayName": "SaturShine Website",
-      "type": "application/ai-catalog+json",
+      "type": "application/ai-registry+json",
       "url": "https://saturshine.pl/ai-catalog.json",
       "description": "Katalog zasobów firmy SaturShine – profesjonalne sprzątanie biur i obiektów komercyjnych w Warszawie.",
       "representativeQueries": [
@@ -14,9 +14,9 @@
       ]
     },
     {
-      "identifier": "urn:air:saturshine.pl:llms:documentation",
+      "identifier": "urn:air:saturshine:llms:documentation",
       "displayName": "SaturShine LLM Documentation",
-      "type": "text/markdown",
+      "type": "application/agent-skills+json",
       "url": "https://saturshine.pl/.well-known/llms.txt",
       "description": "Dokumentacja i informacje o usługach firmy SaturShine zoptymalizowane do odczytu przez modele językowe (LLM).",
       "representativeQueries": [
