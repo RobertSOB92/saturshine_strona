@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Polityka Prywatności | SaturShine" description="Polityka prywatności firmy SaturShine. Dowiedz się, w jaki sposób dbamy o Twoje dane.">
+  <Header client:idle />
+
+  <main id="main-content" style="background-color: #F6F6F4; padding: 140px 20px 80px; min-height: 100vh;">
+    <article style="max-width: 800px; margin: 0 auto; background-color: #fff; padding: clamp(2rem, 5vw, 4rem); border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+      
+      <h1 style="font-family: 'Syne', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); color: #141414; margin-bottom: 3rem; font-weight: 700; line-height: 1.1; letter-spacing: -0.02em;">
+        Polityka <span style="color: #B8832A;">prywatności</span>
+      </h1>
+
+      <div style="font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: #1B3A2D; line-height: 1.7; display: flex; flex-direction: column; gap: 2rem;">
+        
+        <p style="font-size: 1.25rem; font-weight: 500; color: #141414;">
+          W SaturShine szanujemy Twoją prywatność i budujemy zaufanie bez zbędnego, korporacyjnego bełkotu. Poniżej wyjaśniamy krótko i na temat zasady przetwarzania informacji na naszej stronie internetowej.
+        </p>
+
+        <section>
+          <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: #141414; margin: 1rem 0 0.8rem; font-weight: 600;">1. Pliki cookies (ciasteczka)</h2>
+          <p>
+            Nasza strona internetowa to wizytówka firmy — <strong>nie wykorzystuje ciasteczek (cookies) śledzących</strong>, analitycznych (takich jak Google Analytics, Meta Pixel) ani remarketingowych. Strona nie śledzi Twoich ruchów w sieci ani nie profiluje użytkowników. Przechowywane mogą być jedynie elementarne techniczne dane sesyjne, wymagane do poprawnego działania przeglądarki, w związku z czym (zgodnie z unijnymi przepisami) <strong>nie musimy, i celowo nie wyświetlamy irytujących banerów ze zgodami na ciasteczka</strong>.
+          </p>
+        </section>
+
+        <section>
+          <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: #141414; margin: 1rem 0 0.8rem; font-weight: 600;">2. Formularz kontaktowy</h2>
+          <p>
+            Nasz formularz "Wyślij zapytanie" nie zapisuje danych w żadnej chmurze ani ukrytej bazie na serwerze tej strony. Formularz ten oparty jest na prostym protokole <code style="background: #F6F6F4; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; font-family: monospace; color: #141414;">mailto:</code>. Jego jedynym zadaniem jest wygenerowanie i otworzenie szkicu wiadomości w Twoim domyślnym programie pocztowym (np. Gmail, Outlook). Wszystko odbywa się po Twojej stronie.
+          </p>
+        </section>
+
+        <section>
+          <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: #141414; margin: 1rem 0 0.8rem; font-weight: 600;">3. Dane podane w zapytaniach ofertowych</h2>
+          <p>
+            Jeśli wyślesz do nas e-mail w celu otrzymania wyceny, administratorem tych danych (np. imię, adres e-mail, treść wiadomości, ewentualnie numer telefonu) zostaje firma SaturShine. Gwarantujemy, że korzystamy z tych danych <strong>wyłącznie</strong> po to, by skontaktować się z Tobą w sprawie oferty, przyjechać na bezpłatne oględziny i ostatecznie – posprzątać Twoje biuro.
+          </p>
+        </section>
+
+        <section>
+          <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: #141414; margin: 1rem 0 0.8rem; font-weight: 600;">4. Udostępnianie danych</h2>
+          <p>
+            Działamy B2B opierając się na bezpośrednim kontakcie. Nikomu nie sprzedajemy, nie wymieniamy, ani nie udostępniamy Twoich danych osobowych zewnętrznym agencjom marketingowym czy innym osobom trzecim. 
+          </p>
+        </section>
+
+        <section>
+          <h2 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: #141414; margin: 1rem 0 0.8rem; font-weight: 600;">5. Kontakt</h2>
+          <p>
+            Masz pełne prawo zapytać nas, jakie Twoje dane przechowujemy lub zażądać usunięcia historii naszej korespondencji e-mail po zakończeniu współpracy. Po prostu do nas napisz — adres znajdziesz w stopce.
+          </p>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>
