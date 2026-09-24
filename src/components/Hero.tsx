@@ -69,9 +69,9 @@ export default function Hero() {
         }}
       >
         {/* Two-column layout: big H1 left, details right */}
-        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
+        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 10rem)', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
           {/* H1 */}
-          <div style={{ flex: '1 1 auto', maxWidth: '800px' }}>
+          <div style={{ flex: '0 1 auto', maxWidth: '800px' }}>
             <h1
               style={{
                 fontFamily: 'Syne, sans-serif',
