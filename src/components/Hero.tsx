@@ -37,27 +37,29 @@ export default function Hero() {
         </span>
       </div>
 
-      {/* Editorial Foam Graphic (anchors the sight) */}
-      <div 
-        className="hero-foam-image"
-        style={{
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          width: '50vw',
-          maxWidth: '800px',
-          height: '100%',
-          backgroundImage: 'url(/foam-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: 0,
-          opacity: 0.8,
-          maskImage: 'linear-gradient(to right, transparent, black 30%)',
-          WebkitMaskImage: 'linear-gradient(to right, transparent, black 30%)',
-          pointerEvents: 'none'
-        }}
-        aria-hidden="true"
-      />
+      {/* Editorial Foam Graphic (anchors the sight) - wrapped to prevent floating away on 4K screens */}
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ width: '100%', maxWidth: '1440px', position: 'relative' }}>
+          <div 
+            className="hero-foam-image"
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              width: '50vw',
+              maxWidth: '800px',
+              height: '100%',
+              backgroundImage: 'url(/foam-bg.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: 0.8,
+              maskImage: 'linear-gradient(to right, transparent, black 30%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent, black 30%)',
+            }}
+            aria-hidden="true"
+          />
+        </div>
+      </div>
 
       {/* Main content block - bottom-anchored */}
       <div
