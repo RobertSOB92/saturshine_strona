@@ -48,7 +48,7 @@ function validate(d: FormData): FormErrors {
 }
 
 function buildMailto(d: FormData): string {
-  const subject = `Zapytanie o wycenę — ${d.service}`;
+  const subject = `Zapytanie o wycenę - ${d.service}`;
   const lines = [
     `Firma / obiekt: ${d.company}`,
     `Imię i nazwisko: ${d.name}`,
@@ -146,7 +146,7 @@ export default function ContactForm() {
             <div style={{ maxWidth: 340, paddingTop: 4 }}>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7 }}>
                 Formularz otworzy Twoją skrzynkę mailową z gotową wiadomością.
-                Wysyłasz ją sam — Twoje dane nie trafiają na żaden serwer.
+                Wysyłasz ją sam - Twoje dane nie trafiają na żaden serwer.
               </p>
               <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
                 {['Skrzynka mailowa otwiera się automatycznie', 'Odpiszemy w ciągu 24 h roboczych', 'Bezpłatne oględziny po wstępnym zgłoszeniu'].map((t, i) => (
@@ -180,7 +180,7 @@ export default function ContactForm() {
                 Klient pocztowy się otworzył
               </h3>
               <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.65, marginBottom: 20, maxWidth: 420, margin: '0 auto 20px' }}>
-                Sprawdź swoją aplikację pocztową — wiadomość jest gotowa. Jeśli nic się nie otworzyło, napisz bezpośrednio na{' '}
+                Sprawdź swoją aplikację pocztową - wiadomość jest gotowa. Jeśli nic się nie otworzyło, napisz bezpośrednio na{' '}
                 <a href={`mailto:${SITE_EMAIL}`} style={{ color: '#1B3A2D' }}>{SITE_EMAIL}</a>.
               </p>
               <button onClick={() => setSubmitted(false)} style={{

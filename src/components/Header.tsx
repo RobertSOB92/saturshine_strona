@@ -36,7 +36,7 @@ export default function Header() {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 64 }}>
         {/* Wordmark */}
-        <a href="/" aria-label={`${COMPANY_NAME} — strona główna`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', zIndex: 101, position: 'relative' }}>
+        <a href="/" aria-label={`${COMPANY_NAME} - strona główna`} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', zIndex: 101, position: 'relative' }}>
           <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 20, color: menuOpen ? '#fff' : '#1B3A2D', letterSpacing: '-0.5px', transition: 'color 0.3s' }}>
             Satur<span style={{ color: '#B8832A' }}>Shine</span>
           </span>

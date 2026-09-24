@@ -10,11 +10,11 @@ const SERVICES = [
     includes: [
       'Odkurzanie i mycie podłóg',
       'Czyszczenie powierzchni roboczych i mebli',
-      'Sanitariaty — dezynfekcja i uzupełnienie środków',
+      'Sanitariaty - dezynfekcja i uzupełnienie środków',
       'Opróżnianie koszy, wymiana worków',
       'Mycie kuchni i strefy socjalnej',
     ],
-    note: 'Wycena po oględzinach — zależy od metrażu i częstotliwości.',
+    note: 'Wycena po oględzinach - zależy od metrażu i częstotliwości.',
     accent: '#e8f0eb',
     accentText: '#1B3A2D',
   },
@@ -23,7 +23,7 @@ const SERVICES = [
     number: '02',
     title: 'Mycie przeszkleń',
     tags: ['Fasady szklane', 'Okna', 'Balustrady'],
-    lead: 'Fasady i okna bez smug, nalotów i zacieków — widok, który robi wrażenie.',
+    lead: 'Fasady i okna bez smug, nalotów i zacieków - widok, który robi wrażenie.',
     forWho: 'Budynki biurowe z elewacjami szklanymi, biurowce wielokondygnacyjne, galerie, hotele, banki.',
     includes: [
       'Mycie okien i fasad szklanych (jedno- i dwustronnie)',
@@ -31,7 +31,7 @@ const SERVICES = [
       'Szklane ściany działowe i balustrady',
       'Usunięcie wapna i nalotów mineralnych',
     ],
-    note: 'Cena zależy od powierzchni i dostępności — wycena po oględzinach.',
+    note: 'Cena zależy od powierzchni i dostępności - wycena po oględzinach.',
     accent: '#fdf4e3',
     accentText: '#7a4f10',
   },
@@ -40,7 +40,7 @@ const SERVICES = [
     number: '03',
     title: 'Pranie wykładzin',
     tags: ['Ekstrakcja', 'Odplamianie', 'Impregnacja'],
-    lead: 'Wykładzina jak nowa — bez długiego przestoju i nieprzyjemnych zapachów.',
+    lead: 'Wykładzina jak nowa - bez długiego przestoju i nieprzyjemnych zapachów.',
     forWho: 'Biura i sale konferencyjne z wykładziną dywanową, hotele, obiekty wystawiennicze.',
     includes: [
       'Odkurzanie wstępne przed praniem',
@@ -49,7 +49,7 @@ const SERVICES = [
       'Pranie wstępne środkiem pre-spray',
       'Impregnacja po praniu (opcjonalnie)',
     ],
-    note: 'Wycena od metrażu i stopnia zabrudzenia — ustalamy po oględzinach.',
+    note: 'Wycena od metrażu i stopnia zabrudzenia - ustalamy po oględzinach.',
     accent: '#F6F6F4',
     accentText: '#3a3a3a',
   },
@@ -65,9 +65,9 @@ const SERVICES = [
       'Gruntowne mycie i odtłuszczanie posadzki',
       'Nakładanie świeżych warstw polimeru',
       'Polerowanie maszyną jednotarczową / highspeed',
-      'Impregnacja — ochrona przed zabrudzeniem',
+      'Impregnacja - ochrona przed zabrudzeniem',
     ],
-    note: 'Cena od metrażu i stanu posadzki — wycena po oględzinach.',
+    note: 'Cena od metrażu i stanu posadzki - wycena po oględzinach.',
     accent: '#e8f0eb',
     accentText: '#1B3A2D',
   },
@@ -76,7 +76,7 @@ const SERVICES = [
 export default function Services() {
   return (
     <section id="uslugi" className="reveal-section" style={{ background: '#FFFFFF', padding: '0 0 6rem' }}>
-      {/* Section header — full width, very minimal */}
+      {/* Section header - full width, very minimal */}
       <div
         className="services-header"
         style={{
@@ -97,11 +97,11 @@ export default function Services() {
           Usługi
         </h2>
         <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', maxWidth: 280, textAlign: 'right', lineHeight: 1.6 }}>
-          Każda usługa wyceniana indywidualnie — po bezpłatnych oględzinach obiektu.
+          Każda usługa wyceniana indywidualnie - po bezpłatnych oględzinach obiektu.
         </p>
       </div>
 
-      {/* Services — horizontal rows, NOT equal cards */}
+      {/* Services - horizontal rows, NOT equal cards */}
       {SERVICES.map((service, idx) => (
         <article
           key={service.id}

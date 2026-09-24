@@ -1,6 +1,6 @@
 // ============================================================
-// CENTRALNY PLIK KONFIGURACYJNY — DANE FIRMY
-// Zmień dane tutaj — zaktualizują się automatycznie w całej aplikacji
+// CENTRALNY PLIK KONFIGURACYJNY - DANE FIRMY
+// Zmień dane tutaj - zaktualizują się automatycznie w całej aplikacji
 // ============================================================
 
 export const SITE_CONFIG = {

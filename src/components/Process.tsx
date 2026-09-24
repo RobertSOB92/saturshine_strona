@@ -2,25 +2,25 @@ const STEPS = [
   {
     number: '01',
     title: 'Zgłoszenie',
-    body: 'Wypełnij formularz na stronie lub zadzwoń. Opisz obiekt i rodzaj usługi — wystarczy kilka zdań.',
+    body: 'Wypełnij formularz na stronie lub zadzwoń. Opisz obiekt i rodzaj usługi - wystarczy kilka zdań.',
     meta: 'Odpowiadamy w ciągu 24 h',
   },
   {
     number: '02',
     title: 'Wizja lokalna',
-    body: 'Przyjeżdżamy na obiekt. Oceniamy stan pomieszczeń, metraż i dostępność. Bez zobowiązań — wizyta jest bezpłatna.',
+    body: 'Przyjeżdżamy na obiekt. Oceniamy stan pomieszczeń, metraż i dostępność. Bez zobowiązań - wizyta jest bezpłatna.',
     meta: 'Termin ustalamy elastycznie',
   },
   {
     number: '03',
     title: 'Konkretna oferta',
-    body: 'Na podstawie oględzin przygotowujemy wycenę z wyszczególnieniem zakresu. Negocjowalną — jeśli coś nie pasuje, rozmawiamy.',
+    body: 'Na podstawie oględzin przygotowujemy wycenę z wyszczególnieniem zakresu. Negocjowalną - jeśli coś nie pasuje, rozmawiamy.',
     meta: 'Oferta w 48 h od oględzin',
   },
   {
     number: '04',
     title: 'Start współpracy',
-    body: 'Po akceptacji oferty ustalamy harmonogram. Masz bezpośredni kontakt z ekipą — piszesz lub dzwonisz do nas, nie do biura.',
+    body: 'Po akceptacji oferty ustalamy harmonogram. Masz bezpośredni kontakt z ekipą - piszesz lub dzwonisz do nas, nie do biura.',
     meta: 'Elastyczny termin startu',
   },
 ];
@@ -45,7 +45,7 @@ export default function Process() {
           </h2>
           <div style={{ display: 'flex', alignItems: 'flex-end', paddingBottom: 4 }}>
             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#717171', lineHeight: 1.7 }}>
-              Od pierwszego kontaktu do startu prac — zazwyczaj kilka dni roboczych.
+              Od pierwszego kontaktu do startu prac - zazwyczaj kilka dni roboczych.
               Przy pilnych zleceniach staramy się działać szybciej.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function Process() {
 
         {/* Steps */}
         <div className="process-content fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', background: '#fff', padding: '3rem' }}>
-          {/* Steps 01 & 02 — Left Column */}
+          {/* Steps 01 & 02 - Left Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             {[STEPS[0], STEPS[1]].map((step, i) => (
               <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>
@@ -76,7 +76,7 @@ export default function Process() {
             ))}
           </div>
 
-          {/* Steps 03 & 04 — Right Column */}
+          {/* Steps 03 & 04 - Right Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             {[STEPS[2], STEPS[3]].map((step, i) => (
               <div key={step.number} style={{ paddingBottom: i === 0 ? '2.5rem' : 0, borderBottom: i === 0 ? '1px solid #E2E0DC' : 'none' }}>

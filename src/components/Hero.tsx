@@ -30,14 +30,14 @@ export default function Hero() {
         }}
       >
         <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#717171' }}>
-          Firma sprzątająca — Warszawa
+          Firma sprzątająca - Warszawa
         </span>
         <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#717171' }}>
           Est. 2024
         </span>
       </div>
 
-      {/* Main content block — bottom-anchored */}
+      {/* Main content block - bottom-anchored */}
       <div
         className="hero-parallax-target"
         style={{
@@ -72,7 +72,7 @@ export default function Hero() {
               <div>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#717171', lineHeight: 1.6, maxWidth: 440, margin: '0 0 1.5rem', minHeight: '4.8em' }}>
                   Sprzątanie biur, mycie przeszkleń, pranie wykładzin,
-                  polimerowanie podłóg. Wycena po bezpłatnych oględzinach —
+                  polimerowanie podłóg. Wycena po bezpłatnych oględzinach -
                   bo każdy obiekt jest inny.
                 </p>
                 <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>

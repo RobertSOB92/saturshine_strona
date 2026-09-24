@@ -1,13 +1,13 @@
 const REASONS = [
   {
     label: 'Bezpośredni kontakt',
-    headline: 'Rozmawiasz z nami — nie z call center.',
+    headline: 'Rozmawiasz z nami - nie z call center.',
     body: 'Telefon i e-mail prowadzą bezpośrednio do osób, które planują i wykonują prace. Bez pośredników i czekania w kolejce.',
   },
   {
     label: 'Elastyczne podejście',
-    headline: 'Brak sztywnych pakietów — każdy obiekt to osobna rozmowa.',
-    body: 'Zakres, częstotliwość i harmonogram ustalamy wspólnie — dopasowując się do rytmu Twojej firmy, nie odwrotnie.',
+    headline: 'Brak sztywnych pakietów - każdy obiekt to osobna rozmowa.',
+    body: 'Zakres, częstotliwość i harmonogram ustalamy wspólnie - dopasowując się do rytmu Twojej firmy, nie odwrotnie.',
   },
   {
     label: 'Transparentny cennik',
@@ -51,14 +51,14 @@ export default function WhyUs() {
                   lineHeight: 1.25, margin: 0,
                 }}
               >
-                Jesteśmy startupem — nie mamy 500 referencji.<br />
+                Jesteśmy startupem - nie mamy 500 referencji.<br />
                 <span style={{ color: '#1B3A2D' }}>Mamy za to czas i uwagę dla każdego klienta.</span>
               </h2>
             </div>
           </div>
         </div>
 
-        {/* Reasons — NOT 2x2 identical cards.
+        {/* Reasons - NOT 2x2 identical cards.
             Layout: left full-height text block + right vertical list */}
         <div className="whyus-content" style={{ display: 'grid', gridTemplateColumns: '1fr 2px 1fr', gap: '3rem', alignItems: 'start' }}>
 

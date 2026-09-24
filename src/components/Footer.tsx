@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '2rem', paddingBottom: '3rem', borderBottom: '1px solid #2a2a2a' }}>
           {/* Brand */}
           <div>
-            <a href="/" style={{ display: 'block', textDecoration: 'none', marginBottom: 12 }} aria-label={`${COMPANY_NAME} — strona główna`}>
+            <a href="/" style={{ display: 'block', textDecoration: 'none', marginBottom: 12 }} aria-label={`${COMPANY_NAME} - strona główna`}>
               <span style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 18, color: '#fff', letterSpacing: '-0.03em' }}>
                 Satur<span style={{ color: '#B8832A' }}>Shine</span>
               </span>

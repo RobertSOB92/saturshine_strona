@@ -45,7 +45,7 @@ export default function ContactInfo() {
             </p>
           </div>
 
-          {/* Right — contact entries */}
+          {/* Right - contact entries */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {/* Phone */}
             <a

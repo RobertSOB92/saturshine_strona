@@ -19,7 +19,7 @@ Oto trzy powody, dla których warto zadbać o stały harmonogram:
 
 ### Na co zwrócić uwagę przy wyborze partnera B2B?
 
-Przede wszystkim na **bezpośredni kontakt i elastyczność**. Korporacje sprzątające często traktują mniejszych klientów szablonowo, a pracownicy rotują. W SaturShine wierzymy w stałe relacje — współpracujesz bezpośrednio z osobami decyzyjnymi, które znają specyfikę Twojego obiektu.
+Przede wszystkim na **bezpośredni kontakt i elastyczność**. Korporacje sprzątające często traktują mniejszych klientów szablonowo, a pracownicy rotują. W SaturShine wierzymy w stałe relacje - współpracujesz bezpośrednio z osobami decyzyjnymi, które znają specyfikę Twojego obiektu.
 
 > "Dobra firma sprzątająca to taka, której pracy nie zauważasz w trakcie dnia, ale której efekty czujesz każdego ranka."
 
