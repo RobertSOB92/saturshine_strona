@@ -71,9 +71,7 @@ export default function Hero() {
               <div style={{ width: 1, height: 48, background: '#C8C4BE', flexShrink: 0, marginTop: 4 }} aria-hidden="true" />
               <div>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#717171', lineHeight: 1.6, maxWidth: 440, margin: '0 0 1.5rem', minHeight: '4.8em' }}>
-                  Sprzątanie biur, mycie przeszkleń, pranie wykładzin,
-                  polimerowanie podłóg. Wycena po bezpłatnych oględzinach -
-                  bo każdy obiekt jest inny.
+                  Dbamy o biura tak, jak sami chcielibyśmy pracować. Zobaczymy przestrzeń, wysłuchamy oczekiwań i przejmiemy pełną odpowiedzialność za porządek.
                 </p>
                 <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                   <a
@@ -88,9 +86,9 @@ export default function Hero() {
                       textDecoration: 'none', borderRadius: 2, letterSpacing: '0.02em',
                     }}
                   >
-                    Poproś o bezpłatną wycenę
+                    Sprawdź, co możemy zrobić
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </a>
                   <a
@@ -132,7 +130,7 @@ export default function Hero() {
             ].map((item, i) => (
               <a
                 key={i}
-                href={`#${['sprzatanie-biur','mycie-przeszklen','pranie-wykladziN','polimerowanie-podlog'][i]}`}
+                href={`#${['sprzatanie-biur', 'mycie-przeszklen', 'pranie-wykladziN', 'polimerowanie-podlog'][i]}`}
                 className="hero-sidebar-link"
                 style={{
                   display: 'flex', alignItems: 'baseline', gap: 10,
