@@ -49,7 +49,7 @@ export default function Hero() {
               width: '50vw',
               maxWidth: '800px',
               height: '100%',
-              backgroundImage: 'url(/foam-bg.jpg)',
+              backgroundImage: 'url(/foam-bg-optimized.jpg)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: 0.8,
