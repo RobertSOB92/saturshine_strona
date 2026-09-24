@@ -37,6 +37,28 @@ export default function Hero() {
         </span>
       </div>
 
+      {/* Editorial Foam Graphic (anchors the sight) */}
+      <div 
+        className="hero-foam-image"
+        style={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          width: '50vw',
+          maxWidth: '800px',
+          height: '100%',
+          backgroundImage: 'url(/foam-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: 0,
+          opacity: 0.8,
+          maskImage: 'linear-gradient(to right, transparent, black 30%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 30%)',
+          pointerEvents: 'none'
+        }}
+        aria-hidden="true"
+      />
+
       {/* Main content block - bottom-anchored */}
       <div
         className="hero-parallax-target"
@@ -47,9 +69,9 @@ export default function Hero() {
         }}
       >
         {/* Two-column layout: big H1 left, details right */}
-        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 12rem)', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
+        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
           {/* H1 */}
-          <div>
+          <div style={{ flex: '1 1 auto', maxWidth: '800px' }}>
             <h1
               style={{
                 fontFamily: 'Syne, sans-serif',
@@ -125,11 +147,11 @@ export default function Hero() {
               { n: '01', label: 'Sprzątanie biur' },
               { n: '02', label: 'Mycie przeszkleń' },
               { n: '03', label: 'Pranie wykładzin' },
-              { n: '04', label: 'Polimerowanie podłóg' },
+              { n: '04', label: 'Polimeryzacja podłóg' },
             ].map((item, i) => (
               <a
                 key={i}
-                href={`#${['sprzatanie-biur', 'mycie-przeszklen', 'pranie-wykladziN', 'polimerowanie-podlog'][i]}`}
+                href={`#${['sprzatanie-biur', 'mycie-przeszklen', 'pranie-wykladziN', 'polimeryzacja-podlog'][i]}`}
                 className="hero-sidebar-link"
                 style={{
                   display: 'flex', alignItems: 'baseline', gap: 10,

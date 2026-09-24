@@ -4,7 +4,7 @@ const SERVICES_LINKS = [
   { label: 'Sprzątanie biur', href: '/#sprzatanie-biur' },
   { label: 'Mycie przeszkleń', href: '/#mycie-przeszklen' },
   { label: 'Pranie wykładzin', href: '/#pranie-wykladziN' },
-  { label: 'Polimerowanie podłóg', href: '/#polimerowanie-podlog' },
+  { label: 'Polimeryzacja podłóg', href: '/#polimeryzacja-podlog' },
 ];
 
 export default function Footer() {

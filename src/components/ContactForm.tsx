@@ -21,7 +21,7 @@ const SERVICES = [
   'Sprzątanie biur',
   'Mycie przeszkleń / okien',
   'Pranie wykładzin',
-  'Polimerowanie podłóg',
+  'Polimeryzacja podłóg',
   'Kilka usług / pakiet',
   'Inne / nie wiem jeszcze',
 ];

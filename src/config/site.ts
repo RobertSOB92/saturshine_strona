@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
   siteUrl: 'https://saturshine.pl',
   tagline: 'Czyste biuro. Bez kompromisów.',
   description:
-    'Profesjonalne sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie i okolicach.',
+    'Profesjonalne sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimeryzacja podłóg w Warszawie i okolicach.',
 
   // NIP / dane formalne (WYMAGANE PRAWNIE DLA STRON FIRMOWYCH W POLSCE)
   // Uzupełnij te dane, aby strona była w pełni zgodna z przepisami

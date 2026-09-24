@@ -54,9 +54,9 @@ const SERVICES = [
     accentText: '#3a3a3a',
   },
   {
-    id: 'polimerowanie-podlog',
+    id: 'polimeryzacja-podlog',
     number: '04',
-    title: 'Polimerowanie podłóg',
+    title: 'Polimeryzacja podłóg',
     tags: ['PCV', 'Linoleum', 'Wylewka', 'Lastriko'],
     lead: 'Posadzka z lustrzanym połyskiem i ochroną przed następnym zabrudzeniem.',
     forWho: 'Biura, korytarze, hale z posadzkami PCV, linoleum, wylewką, lastriko lub terakotą.',

@@ -15,7 +15,7 @@ Oto trzy powody, dla których warto zadbać o stały harmonogram:
 
 1. **Reprezentacyjny wygląd:** Twoje biuro to wizytówka przed klientami i partnerami biznesowymi. Czyste przeszklone sale konferencyjne budują zaufanie.
 2. **Higiena sprzętu:** Klawiatury i telefony to prawdziwe siedliska bakterii. Profesjonalna dezynfekcja biurek zapobiega rozprzestrzenianiu się infekcji.
-3. **Żywotność materiałów:** Wykładziny biurowe oraz podłogi twarde niszczą się znacznie szybciej, gdy piasek i brud wnikają w ich strukturę. Regularne pranie i **polimerowanie** zabezpieczają powierzchnie na lata.
+3. **Żywotność materiałów:** Wykładziny biurowe oraz podłogi twarde niszczą się znacznie szybciej, gdy piasek i brud wnikają w ich strukturę. Regularne pranie i **polimeryzacja** zabezpieczają powierzchnie na lata.
 
 ### Na co zwrócić uwagę przy wyborze partnera B2B?
 
