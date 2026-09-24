@@ -53,8 +53,8 @@ export default function Hero() {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               opacity: 0.8,
-              maskImage: 'linear-gradient(to right, transparent, black 30%)',
-              WebkitMaskImage: 'linear-gradient(to right, transparent, black 30%)',
+              maskImage: 'radial-gradient(ellipse 120% 100% at 100% 0%, black 40%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 120% 100% at 100% 0%, black 40%, transparent 100%)',
             }}
             aria-hidden="true"
           />
