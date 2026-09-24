@@ -71,7 +71,7 @@ export default function Hero() {
               <div style={{ width: 1, height: 48, background: '#C8C4BE', flexShrink: 0, marginTop: 4 }} aria-hidden="true" />
               <div>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: '#717171', lineHeight: 1.6, maxWidth: 440, margin: '0 0 1.5rem', minHeight: '4.8em' }}>
-                  Dbamy o Waszą przestrzeń, abyście Wy mogli skupić się na pracy.                </p>
+                  Wy skupiacie się na swoim biznesie, a my bierzemy na siebie porządek w biurze. Przyjedziemy, poznamy Wasze potrzeby i zajmiemy się resztą.                </p>
                 <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
                   <a
                     href="#wycena"
