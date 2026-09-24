@@ -27,6 +27,10 @@ export default function Footer() {
             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#717171', lineHeight: 1.6, margin: 0 }}>
               Profesjonalne sprzątanie biur w Warszawie i okolicach.
             </p>
+            <div style={{ marginTop: 16 }}>
+              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#444', display: 'block', lineHeight: 1.5 }}>{SITE_CONFIG.address}</span>
+              <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#444', display: 'block', lineHeight: 1.5 }}>{SITE_CONFIG.nip}</span>
+            </div>
           </div>
 
           {/* Usługi */}

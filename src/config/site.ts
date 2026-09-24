@@ -20,9 +20,10 @@ export const SITE_CONFIG = {
   description:
     'Profesjonalne sprzątanie biur, mycie przeszkleń, pranie wykładzin i polimerowanie podłóg w Warszawie i okolicach.',
 
-  // NIP / dane formalne (opcjonalnie — odblokuj gdy gotowe)
-  // nip: '000-000-00-00',
-  // regon: '000000000',
+  // NIP / dane formalne (WYMAGANE PRAWNIE DLA STRON FIRMOWYCH W POLSCE)
+  // Uzupełnij te dane, aby strona była w pełni zgodna z przepisami
+  nip: 'NIP: 9512316113', 
+  address: 'Adres korespondencyjny: ul. Korczyńska 8/75, 02-934 Warszawa',
 } as const;
 
 // Skrót dla mailto
