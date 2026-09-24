@@ -71,7 +71,7 @@ export default function Hero() {
         }}
       >
         {/* Two-column layout: big H1 left, details right */}
-        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(4rem, 8vw, 10rem)', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
+        <div className="hero-content section-container" style={{ display: 'flex', flexWrap: 'wrap', columnGap: 'clamp(2rem, 4vw, 5rem)', rowGap: '3rem', alignItems: 'flex-end', paddingTop: '3rem' }}>
           {/* H1 */}
           <div style={{ flex: '0 1 auto', maxWidth: '800px' }}>
             <h1
@@ -176,7 +176,7 @@ export default function Hero() {
 
       <style>{`
         .hero-section {
-          justify-content: flex-end;
+          justify-content: center;
         }
         @media (max-width: 768px) {
           .hero-section {
