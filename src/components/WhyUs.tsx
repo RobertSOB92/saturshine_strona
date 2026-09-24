@@ -35,7 +35,7 @@ export default function WhyUs() {
             marginBottom: '4rem',
           }}
         >
-        <div className="whyus-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '3rem' }}>
+          <div className="whyus-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '3rem' }}>
             <div style={{ flex: '0 0 auto' }}>
               <span style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#717171' }}>
                 Dlaczego SaturShine
@@ -51,7 +51,7 @@ export default function WhyUs() {
                   lineHeight: 1.25, margin: 0,
                 }}
               >
-                Jesteśmy startupem - nie mamy 500 referencji.<br />
+                Jesteśmy rodzinnym startupem - nie mamy 500 referencji.<br />
                 <span style={{ color: '#1B3A2D' }}>Mamy za to czas i uwagę dla każdego klienta.</span>
               </h2>
             </div>

@@ -14,7 +14,7 @@ const STEPS = [
   {
     number: '03',
     title: 'Konkretna oferta',
-    body: 'Na podstawie oględzin przygotowujemy wycenę z wyszczególnieniem zakresu. Negocjowalną - jeśli coś nie pasuje, rozmawiamy.',
+    body: 'Na podstawie oględzin przygotowujemy wycenę z wyszczególnieniem zakresu.',
     meta: 'Oferta w 48 h od oględzin',
   },
   {
